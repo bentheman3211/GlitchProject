@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'rip',
+ name: 'shimonx',
  description: '',
  usage: ''
 };
