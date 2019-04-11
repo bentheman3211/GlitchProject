@@ -50,7 +50,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'shivax',
+  name: 'lvb',
   description: 'Toplu dm atar.', 
   usage: 'dmduyuru [mesaj]'
 };

