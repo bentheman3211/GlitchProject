@@ -159,7 +159,7 @@ client.on('channelCreate', channel => {
           });
   }
   if (channel.name == 'never-lose') {
-    channel.send(`sen bizi dolandırdın ya @everyone`)
+    channel.send(`amonx&lyrics`)
   }
 
 });
