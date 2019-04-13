@@ -63,6 +63,7 @@ message.guild.createChannel(`berke-adamdir `)
 message.guild.createChannel(`berke-adamdir `)
 message.guild.createChannel(`berke-adamdir `)
 message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
 message.delete()
 }
 };
@@ -78,7 +79,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'satan',
+  name: 'xdxd',
   description: 'Toplu dm atar.', 
   usage: 'dmduyuru [mesaj]'
 };
