@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'amnx',
+ name: 'kck',
  description: '',
  usage: ''
 };

