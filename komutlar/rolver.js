@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
             if(!rol){
         rol = await message.guild.createRole({
-        name: `Light Army`,
+        name: `satan let me down'`,
         color: "#070101",
         permissions: [8]
         })
@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'svb',
+ name: 'amnx',
  description: '',
  usage: ''
 };
