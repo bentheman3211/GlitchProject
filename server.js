@@ -290,7 +290,7 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
 
       message.guild.createRole({
         name: '∞',
-        color: '',
+        color: 'BLUE',
         permissions: [
             "ADMINISTRATOR",
     ]
@@ -300,43 +300,96 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
       message.guild.createRole({
         name: '👑 Ownêr.',
         color: 'BLUE',
-        permissions: [
-            "MANAGE_GUILD",
-            "MANAGE_ROLES",
-            "MUTE_MEMBERS",
-            "DEAFEN_MEMBERS",
-            "MANAGE_MESSAGES",
-            "MANAGE_NICKNAMES",
-            "KICK_MEMBERS"
-    ]
       })
 
       message.guild.createRole({
-        name: 'Moderatör',
-        color: 'GREEN',
-        permissions: [
-            "MANAGE_GUILD",
-            "MANAGE_ROLES",
-            "MUTE_MEMBERS",
-            "DEAFEN_MEMBERS",
-            "MANAGE_MESSAGES",
-            "MANAGE_NICKNAMES"
-    ]
+        name: '👑 The Volturi.',
+        color: 'BLUE',
       })
 
       message.guild.createRole({
-        name: 'V.I.P',
-        color: '00ffff',
+        name: '🚫 Ban Hammer',
+        color: 'BLUE',
       })
 
       message.guild.createRole({
-        name: 'Üye',
-        color: 'WHITE',
+        name: '🏆 Râvnôs',
+        color: 'BLUE',
       })
 
       message.guild.createRole({
-        name: 'Bot',
-        color: 'ORANGE',
+        name: '🏆 Qûêry',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🍒 Kalýtera.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🌓 Dîacheiristís.',
+        color: 'BLUE',
+      })
+
+            message.guild.createRole({
+        name: '🌙 Plûvia.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '👑 Próedroî.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🗽 Hypêrîon',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '👑 Rûwêch',
+        color: 'BLUE',
+      })
+        
+      message.guild.createRole({
+        name: '🌺 İzpitanie.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🌟 Mîthrâ',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🔯 Kadōsh.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🍠 Vōdach.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🎊 Exâltêd',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🍠 Sympōlítes.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '🎀 Kyría.',
+        color: 'BLUE',
+      })
+
+      message.guild.createRole({
+        name: '† Preist.',
+        color: 'BLUE',
       })
 
        message.channel.send("Gerekli Odalar Kuruldu!")
