@@ -137,7 +137,7 @@ client.on('message', async message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   let u = message.mentions.users.first() || message.author;
-  if (command === "sunucukur") {
+  if (command === "melkoryap") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
   message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız.`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
@@ -156,30 +156,30 @@ client.on('message', async message => {
 
 
         
- message.guild.createChannel('「📃」kurallar', 'text', [{
+ message.guild.createChannel('📜-kurallar', 'text', [{
   id: message.guild.id,
   deny: ['SEND_MESSAGES']
 }])
 .then(channel =>
- channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|ÖNEMLİ KANALLAR|▬▬|")));
- message.guild.createChannel('「🚪」nasıl yetkili olunur', 'text', [{
+ channel.setParent(message.guild.channels.find(channel => channel.name === "📜 | BİLGİLENDİRME")));
+ message.guild.createChannel('🔔-duyuru', 'text', [{
   id: message.guild.id,
   deny: ['SEND_MESSAGES']
 }])
 .then(channel =>
        channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|ÖNEMLİ KANALLAR|▬▬|")));
-       message.guild.createChannel('「📢」duyuru-odası', 'text', [{
+       message.guild.createChannel('🔔-duyuru', 'text', [{
         id: message.guild.id,
         deny: ['SEND_MESSAGES']
       }])
 .then(channel =>
              channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|ÖNEMLİ KANALLAR|▬▬|")));
-             message.guild.createChannel('「💾」Sohbet', 'text', [{
+             message.guild.createChannel('💾-Sohbet', 'text', [{
               id: message.guild.id,
               deny: ['SEND_MESSAGES']
             }])
             .then(channel => channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|ÖNEMLİ KANALLAR|▬▬|")));
-            message.guild.createChannel('「📢」bot ', 'text', [{
+            message.guild.createChannel('📢-bot-komut', 'text', [{
               id: message.guild.id,
               deny: ['SEND_MESSAGES']
             }])

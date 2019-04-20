@@ -19,7 +19,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'help',
+  name: 'yardım',
   description: 'Tüm komutları gösterir.',
   usage: 'yardım',
 };
