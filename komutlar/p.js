@@ -6,8 +6,7 @@ var prefix = ayarlar.prefix;
 exports.run = (client, message, params) => {
       if (message.channel.type !== 'dm') {
     const ozelmesajkontrol = new Discord.RichEmbed()
-    .setColor(0x00AE86)
-    .setAuthor(message.author.username, message.author.avatarURL)
+    .setColor(0xff0000)
     .setDescription(':x: Missing args \n\n!play [Link or query]');
     message.channel.sendEmbed(ozelmesajkontrol) }
 };
