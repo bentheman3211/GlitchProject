@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
       if (message.channel.type !== 'dm') {
     const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0xff0000)
-    .setDescription(':x: Missing args \n\n!play [Link or query]');
+    .setDescription(':x: Yanlış Kullanış \n\n!çal [Link]');
     message.channel.sendEmbed(ozelmesajkontrol) }
 };
 
@@ -19,7 +19,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'p',
+  name: 'çal',
   description: 'Tüm komutları gösterir.',
   usage: 'yardım',
 };

