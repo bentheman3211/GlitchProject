@@ -11,7 +11,7 @@ exports.run = (client, message, params) => {
     .setAuthor(message.author.username, message.author.avatarURL)
     .setThumbnail(message.author.avatarURL)
     .setFooter(`${message.author.username} tarafından istendi.`, message.author.avatarURL)
-    .setDescription(':white_check_mark: Check ** https://rythmbot.co/features#list ** for a list of commands');
+    .setDescription(':x: Missing args \n\n!play [Link or query]');
     message.channel.sendEmbed(ozelmesajkontrol) }
 };
 
@@ -23,7 +23,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'help',
+  name: 'p',
   description: 'Tüm komutları gösterir.',
   usage: 'yardım',
 };
