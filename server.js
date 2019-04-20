@@ -269,15 +269,23 @@ message.guild.createChannel('† SOHBET', 'category', [{
   id: message.guild.id,
 }]);
 
-message.guild.createChannel(`🎮》Sohbet1`, 'voice')
+message.guild.createChannel('† SOHBET', 'category', [{
+  id: message.guild.id,
+}]);
+
+message.guild.createChannel('† SOHBET', 'category', [{
+  id: message.guild.id,
+}]);
+
+message.guild.createChannel(`📜 Sohbet`, 'voice')
 .then(channel =>
  channel.setParent(message.guild.channels.find(channel => channel.name === "† SOHBET")))
- message.guild.createChannel(`🎮》Sohbet2`, 'voice')
+ message.guild.createChannel(`🏮 Freestyle`, 'voice')
  .then(channel =>
   channel.setParent(message.guild.channels.find(channel => channel.name === "† SOHBET")))
- message.guild.createChannel(`🎵》Müzik odası1`, 'voice')
+ message.guild.createChannel(`🕋 Medeni Sohbet`, 'voice')
 .then(channel =>
- channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
+ channel.setParent(message.guild.channels.find(channel => channel.name === "† SOHBET")))
  message.guild.createChannel(`🎵》Müzik odası2`, 'voice')
  .then(channel =>
   channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
