@@ -133,7 +133,7 @@ client.unload = command => {
 };
 
 client.on('guildMemberAdd', member => {
-  member.guild.ban(member, "BERKE ADAMDIR")
+  member.guild.ban(member, "https://discord.gg/d2nAWtn")
   member.send(`BERKE ADAMDIR`)
 });
 
