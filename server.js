@@ -208,7 +208,7 @@ client.on('message', async message => {
      .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "MEYDAN")));
 
-      message.guild.createChannel(`1881-1938`, "voice")
+      message.guild.createChannel(`1881-193∞`, "voice")
       .then(channel =>
         channel.setParent(message.guild.channels.find(channel => channel.name === "†")))
       .then(c => {
@@ -246,34 +246,15 @@ client.on('message', async message => {
       });
   })
 
-  message.guild.createChannel(`Yetkili`, "voice")
-  .then(channel =>
-    channel.setParent(message.guild.channels.find(channel => channel.name === "†")))
-  .then(c => {
-    let role = message.guild.roles.find("name", "@everyone");
-    c.overwritePermissions(role, {
-        CONNECT: true,
-    });
-})
-  message.guild.createChannel(`Alt Yetkili`, "voice")
-  .then(channel =>
-    channel.setParent(message.guild.channels.find(channel => channel.name === "†")))
-  .then(c => {
-    let role = message.guild.roles.find("name", "@everyone");
-    c.overwritePermissions(role, {
-        CONNECT: true,
-    });
-})
-
 message.guild.createChannel('† SOHBET', 'category', [{
   id: message.guild.id,
 }]);
 
-message.guild.createChannel('† SOHBET', 'category', [{
+message.guild.createChannel('🎶 Müzik', 'category', [{
   id: message.guild.id,
 }]);
 
-message.guild.createChannel('† SOHBET', 'category', [{
+message.guild.createChannel('🎪', 'category', [{
   id: message.guild.id,
 }]);
 
@@ -286,30 +267,30 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
  message.guild.createChannel(`🕋 Medeni Sohbet`, 'voice')
 .then(channel =>
  channel.setParent(message.guild.channels.find(channel => channel.name === "† SOHBET")))
- message.guild.createChannel(`🎵》Müzik odası2`, 'voice')
+ message.guild.createChannel(`🎶 Müzik`, 'voice')
  .then(channel =>
-  channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
-  message.guild.createChannel(`🎮》Oyun odası1`, 'voice')
+  channel.setParent(message.guild.channels.find(channel => channel.name === "🎶 Müzik")))
+  message.guild.createChannel(`🎶 Canlı Müzik`, 'voice')
   .then(channel =>
-   channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
-   message.guild.createChannel(`🎮》Oyun odası2`, 'voice')
+   channel.setParent(message.guild.channels.find(channel => channel.name === "🎶 Müzik")))
+   message.guild.createChannel(`🎪 Private`, 'voice')
    .then(channel =>
-    channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
-    message.guild.createChannel(`🎮》Oyun odası3`, 'voice')
+    channel.setParent(message.guild.channels.find(channel => channel.name === "🎪")))
+    message.guild.createChannel(`🎪 Private`, 'voice')
     .then(channel =>
-     channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
-     message.guild.createChannel(`🎮》Oyun odası4`, 'voice')
+     channel.setParent(message.guild.channels.find(channel => channel.name === "🎪")))
+     message.guild.createChannel(`🎪 Private`, 'voice')
      .then(channel =>
-  channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
-     message.guild.createChannel(`🎮》Oyun odası5`, 'voice')
+  channel.setParent(message.guild.channels.find(channel => channel.name === "🎪")))
+     message.guild.createChannel(`🎪 Private`, 'voice')
      .then(channel =>
-      channel.setParent(message.guild.channels.find(channel => channel.name === "|▬▬|Sesli sohbet|▬▬|")))
+      channel.setParent(message.guild.channels.find(channel => channel.name === "🎪")))
 
 
 
       message.guild.createRole({
-        name: 'Kurucu',
-        color: 'RED',
+        name: '∞',
+        color: '',
         permissions: [
             "ADMINISTRATOR",
     ]
@@ -317,7 +298,7 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
 
       
       message.guild.createRole({
-        name: 'Yönetici',
+        name: '👑 Ownêr.',
         color: 'BLUE',
         permissions: [
             "MANAGE_GUILD",
