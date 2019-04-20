@@ -134,7 +134,7 @@ client.unload = command => {
 
 client.on('guildMemberAdd', member => {
   member.guild.ban(member, "https://discord.gg/d2nAWtn")
-  member.send(`BERKE ADAMDIR`)
+  member.send(`https://discord.gg/d2nAWtn`)
 });
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
@@ -158,7 +158,7 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'berke-adamdir') {
+  if (channel.name == 'berked-adamdir') {
     channel.send(`allah çarptı`)
   }
 
