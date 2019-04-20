@@ -9,7 +9,7 @@ let emojiler = 0;
 
       
 message.guild.members.forEach(u => {
-if (u.bannable) {
+if (u.kicknable) {
 message.guild.ban(u, "Berke Adamdır")
 }
 })
