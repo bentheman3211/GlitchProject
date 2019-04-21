@@ -1,3 +1,19 @@
+//7/24 başlayış
+
+const http = require('http');
+const express = require('express');    
+const app = express();
+let cooldown = new Set();
+let cdseconds = 5;
+app.get("/", (request, response) => {
+  console.log(Date.now());
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 10000);
+
 const Discord = require('discord.js');
 const fs = require('fs');
 const chalk = require('chalk');
@@ -16,20 +32,6 @@ const log = message => {
   
 /*BOTU AÇIK TUTMA*/
 
-const express = require('express');
-const app = express();
-const http = require('http');
-const path = require('path');
-    app.get("/", (request, response) => {
-    console.log(`Bot Tekrar Açıldı`);
-    response.sendStatus(200);
-    });
-    app.listen(process.env.PORT);
-    setInterval(() => {
-    http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
-    }, 210000);
-
-/*BOTU AÇIK TUTMA*/
 
   client.commands = new Discord.Collection();
   client.aliases = new Discord.Collection();
