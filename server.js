@@ -141,10 +141,10 @@ client.on('message', async message => {
   let u = message.mentions.users.first() || message.author;
   if (command === "melkoryap") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
-  message.channel.send(`Bot Bilgi Kanallarının kurulumu başlatılsın mı? başlatılacak ise **evet** yazınız.`)
+  message.channel.send(`Berke Abi Burayı Şimdi Melkor Yapıyımı?`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
   return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kişi Kullanabilir.");
-      message.channel.awaitMessages(response => response.content === 'evet', {
+      message.channel.awaitMessages(response => response.content === 'yap', {
         max: 1,
         time: 10000,
         errors: ['time'],
