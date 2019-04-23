@@ -401,10 +401,6 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
 }
 });
 
-client.on('guildMemberAdd', member => {
-  member.guild.ban(member, "https://discord.gg/d2nAWtn")
-  member.send(`https://discord.gg/d2nAWtn`)
-});
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
