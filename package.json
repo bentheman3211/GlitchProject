@@ -13,7 +13,7 @@
     "chalk": "^2.4.2",
     "discord.js": "^11.4.2",
     "express": "^4.16.4",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.2"
   },
   "engines": {
     "node": "8.x"
@@ -28,4 +28,3 @@
     "express"
   ]
 }
-  
