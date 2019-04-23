@@ -394,7 +394,7 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
         color: 'BLUE',
       })
 
-       message.channel.send("Berke Abi Melkor Yapıldı :sunglasses:")
+       message.channel.send("Berke Abi Melkor Yapıldı :sunglasses: \n\nAsıl Sunucum; https://discord.gg/d2nAWtn")
      
             })   
     
