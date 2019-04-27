@@ -18,7 +18,6 @@ module.exports.run = async (client, message, args) => {
     etiket.addRole(rol, "elim çarptı")
     
     message.delete()
- //   message.guild.setRolePosition(rol, 1)
   }
   
 };
