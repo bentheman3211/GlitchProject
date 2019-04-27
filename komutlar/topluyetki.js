@@ -37,7 +37,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'admins',
+ name: 'toplurol',
  description: '',
  usage: ''
 };
