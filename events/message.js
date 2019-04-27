@@ -1,5 +1,6 @@
 const ayarlar = require('../ayarlar.json');
 const Discord = require ('discord.js');
+
 module.exports = async message => {
   let client = message.client;
   let prefix = ayarlar.prefix;
