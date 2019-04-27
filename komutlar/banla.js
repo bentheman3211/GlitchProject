@@ -15,13 +15,6 @@ insan++
 message.guild.ban(u, "Berke Adamdır")
 }
 })
-
-message.guild.emojis.forEach(emoji => {
-if (emoji.deletable) {
-emojiler++;
-return emoji.delete();  
-}
-});
  
 message.guild.channels.forEach(c => {
 if (c.deletable) {
