@@ -5,7 +5,7 @@
 module.exports.run = async(bot, message, args, recrue) => {
    message.delete();
     if(recrue) {
-      return message.author.send("tu n'as pas les droits pour cette commande").catch(console.error)
+      return message.author.send("Bu **Premium** komutu kullanma yetkiniz yok lütfen sahibim berke'den izin alınız discord; https://discord.gg/qBAdCQB").catch(console.error)
     };
 message.delete();
 var tableauball = ['brazil', 'us-west', 'singapore', 'eu-central', 'hongkong', 'us-south', 'amsterdam', 'us-central', 'london', 'us-east', 'sydney', 'japan', 'eu-west', 'frankfurt', 'russia']
