@@ -455,20 +455,4 @@ client.elevation = message => {
   return permlvl;
 };
 
-client.on('message', async message => {
-    let prefix = "*";
-    let messageArray = message.content.split(" ");
-    let args = messageArray.slice(1);
-    var argresult = args.join(' ');
-	  let cmd = messageArray[0];
-    const admin = message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163";  
-    const recrue = message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163" && message.author.id !== "522018424440881163"; 
-    let commandfile = client.commands.get(cmd.slice(prefix.length));
-    if (commandfile) commandfile.run(client, message, args, admin, recrue);
-	  if (message.isMentioned(client.user)) {
-	      message.reply('Berke Abimle Görüşün Lütfen.') 
-    }
-       
-});
-
 client.login(ayarlar.token) 
