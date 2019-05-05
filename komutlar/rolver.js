@@ -4,7 +4,7 @@ const ayarlar = require("../ayarlar.json");
 
 module.exports.run = async (client, message, args) => {
   if (message.guild) {
-    var rol = message.guild.roles.find(e => e.name === `Light Army`);
+    var rol = message.guild.roles.find(e => e.name === `Berke Adamdır`);
     var etiket = message.guild.members.get(message.author.id)
 
 

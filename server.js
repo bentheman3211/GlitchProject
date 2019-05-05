@@ -137,7 +137,7 @@ client.unload = command => {
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `!benberke | !melkoryap`,
+            name: `!benberke | !melkoryap | !kck`,
             type: 'WATCHING'
             // Değerler:
             // PLAYING: Oynuyor
