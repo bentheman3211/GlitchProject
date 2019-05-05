@@ -194,7 +194,8 @@ client.on('message', async message => {
               id: message.guild.id,
               deny: ['SEND_MESSAGES']
             }])
-            .then(channel => channel.setParent(message.guild.channels.find(channel => channel.name === "📜 | BİLGİLENDİRME")));
+            .then(channel => 
+            channel.setParent(message.guild.channels.find(channel => channel.name === "📜 | BİLGİLENDİRME")));
             message.guild.createChannel('🚫-block-hammer', 'text', [{
               id: message.guild.id,
               deny: ['SEND_MESSAGES']
