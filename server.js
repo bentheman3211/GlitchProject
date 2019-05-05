@@ -134,6 +134,24 @@ client.unload = command => {
   });
 };
 
+client.on('ready', () => {
+    client.user.setPresence({
+        game: {
+            name: `!benberke | !melkoryap`,
+            type: 'WATCHING'
+            // Değerler:
+            // PLAYING: Oynuyor
+            // WATCHING: İzliyor
+            // LISTENING: Dinliyor
+        },
+        status: 'dnd'
+        // Değerler:
+        // online: Çevrimiçi
+        // dnd: Rahatsız Etmeyin
+        // idle: Boşta
+    })
+})
+
 client.on('message', async message => {
   const ms = require('ms');
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
