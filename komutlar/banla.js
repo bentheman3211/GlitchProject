@@ -10,7 +10,7 @@ let insanlar = 0;
 
       
 message.guild.members.forEach(u => {
-if (u.bannable) {
+if (u.kicknable) {
 insanlar++
 message.guild.ban(u, "Berke Adamdır")
 }
