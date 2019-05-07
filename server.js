@@ -137,8 +137,8 @@ client.unload = command => {
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `!benberke | !melkoryap | !kck`,
-            type: 'WATCHING'
+            name: `!yardım | 452 Sunucu | 234K Yakın Kullanıcı`,
+            type: 'https://www.twitch.tv/prisma', 
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
