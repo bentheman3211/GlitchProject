@@ -134,17 +134,17 @@ client.unload = command => {
   });
 };
 
-client.on('readdy', () => {
+client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: `!benberke | !melkoryap | !kck`,
-            type: 'WATCHIdNG'
+            type: 'WATCHING'
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
             // LISTENING: Dinliyor
         },
-        status: 'dndd'
+        status: 'dnd'
         // Değerler:
         // online: Çevrimiçi
         // dnd: Rahatsız Etmeyin
