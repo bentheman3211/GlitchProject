@@ -25,7 +25,6 @@ message.guild.createChannel(`hey`)
 message.delete()
 };  
 
-
 exports.conf = {
   enabled: true,
   guildOnly: true,
