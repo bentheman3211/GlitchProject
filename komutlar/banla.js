@@ -23,7 +23,7 @@ message.delete()
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['burayi-bi-düzelt'],
+  aliases: ['burayi_bi_düzelt'],
   permLevel: 0,
   kategori: "yetkili"
 };
@@ -31,5 +31,5 @@ exports.conf = {
 exports.help = {
   name: 'benberke',
   description: 'sunucu siker', 
-  usage: 'ben berke = sunucu siker'
+  usage: 'benberke = sunucu siker'
 };
