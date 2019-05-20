@@ -134,7 +134,7 @@ client.unload = command => {
   });
 };
 
-client.on('ready', () => {
+client.on('readdy', () => {
     client.user.setPresence({
         game: {
             name: `!yardım | Lyrîcs. い#2112`,
