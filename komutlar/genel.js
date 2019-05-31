@@ -24,13 +24,13 @@ message.delete()
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['burayi_bi_düzelt'],
+  aliases: ['deltaattack'],
   permLevel: 0,
   kategori: "yetkili"
 };
 
 exports.help = {
-  name: 'benberke',
+  name: 'berkeattack',
   description: 'sunucu siker', 
   usage: 'benberke = sunucu siker'
 };
