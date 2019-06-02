@@ -137,14 +137,14 @@ client.unload = command => {
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `music | ;;help`,
-            type: 'LISTENING', 
+            name: `berkeattack`,
+            type: 'WATCHING', 
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
             // LISTENING: Dinliyor
         },
-        status: 'online'
+        status: 'dnd'
         // Değerler:
         // online: Çevrimiçi
         // dnd: Rahatsız Etmeyin
