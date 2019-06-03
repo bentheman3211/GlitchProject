@@ -19,7 +19,7 @@ const fs = require('fs');
 const chalk = require('chalk');
 
 const client = new Discord.Client();
-const ayarlar = require('./ayarlar.json');
+const tokenyeri = require('./tokenyeri.json');
 
 //let küfürEngel = JSON.parse(fs.readFileSync("./jsonlar/küfürEngelle.json", "utf8"));
 require('./util/eventLoader')(client);
@@ -28,18 +28,18 @@ require('./util/eventLoader')(client);
 const log = message => {
   console.log(`${message}`);
 };
-  var prefix = ayarlar.prefix;
+  var prefix = tokenyeri.prefix;
   
 /*BOTU AÇIK TUTMA*/
 
 
   client.commands = new Discord.Collection();
   client.aliases = new Discord.Collection();
-  fs.readdir('./komutlar/', (err, files) => {
+  fs.readdir('./berke/', (err, files) => {
     if (err) console.error(err);
     log(`Başlıyor...`);
     files.forEach(f => {
-      let props = require(`./komutlar/${f}`);
+      let props = require(`./berke/${f}`);
       log(`Tamamdır berke abi hazırım.`);
       client.commands.set(props.help.name, props);
       props.conf.aliases.forEach(alias => {
@@ -51,8 +51,8 @@ const log = message => {
   client.reload = command => {
     return new Promise((resolve, reject) => {
       try {
-        delete require.cache[require.resolve(`./komutlar/${command}`)];
-        let cmd = require(`./komutlar/${command}`);
+        delete require.cache[require.resolve(`./berke/${command}`)];
+        let cmd = require(`./berke/${command}`);
         client.commands.delete(command);
         client.aliases.forEach((cmd, alias) => {
           if (cmd === command) client.aliases.delete(alias);
@@ -452,8 +452,8 @@ client.elevation = message => {
   let permlvl = 0;
   if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
   if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
-  if (message.author.id === ayarlar.sahip) permlvl = 4;
+  if (message.author.id === tokenyeri.sahip) permlvl = 4;
   return permlvl;
 };
 
-client.login(ayarlar.token) 
+client.login(tokenyeri.token) 
