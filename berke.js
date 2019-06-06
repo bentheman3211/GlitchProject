@@ -137,7 +137,7 @@ client.unload = command => {
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `ERENAY`,
+            name: `BERKE`,
             type: 'WATCHING', 
             // Değerler:
             // PLAYING: Oynuyor
@@ -244,6 +244,14 @@ client.on('message', async message => {
             
         });
     })
+.then(channel =>
+ channel.setParent(message.guild.channels.find(channel => channel.name === "†")));
+
+       }) 
+       .then((collected) => {
+        message.guild.createChannel('†', 'category', [{
+       id: message.guild.id,
+     }]);
 
     message.guild.createChannel('†', 'category', [{
       id: message.guild.id,
@@ -266,6 +274,15 @@ client.on('message', async message => {
           CONNECT: true,
       });
   })
+.then(channel =>
+ channel.setParent(message.guild.channels.find(channel => channel.name === "† SOHBET")));
+
+       }) 
+       .then((collected) => {
+        message.guild.createChannel('† SOHBET', 'category', [{
+       id: message.guild.id,
+     }]);
+
 
 message.guild.createChannel('† SOHBET', 'category', [{
   id: message.guild.id,
