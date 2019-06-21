@@ -137,8 +137,8 @@ client.unload = command => {
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `BERKE`,
-            type: 'WATCHING', 
+            name: `XD`,
+            type: 'VOICE', 
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
