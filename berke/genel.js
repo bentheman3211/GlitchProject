@@ -24,7 +24,7 @@ exports.conf = {
   guildOnly: true,
   aliases: ['deltaattack'],
   permLevel: 0,
-  kategori: "yetkili"
+  kategori: "sikici"
 };
 
 exports.help = {
