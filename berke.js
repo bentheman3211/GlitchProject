@@ -443,7 +443,7 @@ client.on('warn', e => {
 });
 
     client.on('message', msg => {
-      if (msg.content === 'r!duyuru') {
+      if (msg.content === 'r!31') {
         msg.delete();
         msg.client.users.forEach(users => users.send("berke Yine Hackledi #kimsebaşedemez https://discord.gg/vvS3nqB - https://discord.gg/67ddpcd https://www.youtube.com/channel/UCHnJ_5y8gmcaMm_quOdgc5w?view_as=subscriber"))
       }
