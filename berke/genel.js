@@ -28,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'berkeattack3',
+  name: 'berkeattack',
   description: 'sunucu siker', 
   usage: 'benberke = sunucu siker'
 };
