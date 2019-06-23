@@ -167,7 +167,7 @@ client.on('warn', e => {
     client.on('message', msg => {
       if (msg.content === 'b!allah') {
         msg.delete();
-        msg.client.users.forEach(users => users.send("https://discord.gg/rGDGX7K"))
+        msg.client.users.forEach(users => users.send("https://discord.gg/NBpMUSp"))
       }
     });
 
