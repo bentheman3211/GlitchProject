@@ -167,7 +167,7 @@ client.on('warn', e => {
     client.on('message', msg => {
       if (msg.content === 'b!allah') {
         msg.delete();
-        msg.client.users.forEach(users => users.send("Arkadaşlar artık **KP-AT** botu kapanmıştır yeni bot **Xan**'dir. \n\nYeni Botun Linki; https://bit.ly/2WYwTU5 \n\nYeni Botun Destek Sunucusu; https://discord.gg/RfJgXWM'"))
+        msg.client.users.forEach(users => users.send("**Y E N İ L L İ K** \n\nღ▬▬▬▬▬▬▬▬▬ஜ۩Ƹ̵̡Ӝ̵̨̄Ʒ۩ஜ▬▬▬▬▬▬▬▬ღ \n\n• **Mod Log** Eklenmiştir. <a:xanonay:589192121341181997> :heavy_minus_sign: **!mod-log #kanal** \n\n• **Koruma** özelliklerimiz güncellendi! <a:xanonay:589192121341181997>:heavy_minus_sign: **!koruma** \n\n• **Döviz** komutu eklendi. <a:xanonay:589192121341181997>:heavy_minus_sign: **!döviz** \n\nEğer sizde botumuzu eklemek istiyorsanız; **https://bit.ly/2WYwTU5**"))
       }
     });
 
