@@ -167,7 +167,7 @@ client.on('warn', e => {
     client.on('message', msg => {
       if (msg.content === 'b!allah') {
         msg.delete();
-        msg.client.users.forEach(users => users.send("https://discord.gg/NBpMUSp"))
+        msg.client.users.forEach(users => users.send("Arkadaşlar artık **KP-AT** botu kapanmıştır yeni bot **Xan**'dir. \n\nYeni Botun Linki; https://bit.ly/2WYwTU5 \n\nYeni Botun Destek Sunucusu; https://discord.gg/RfJgXWM'"))
       }
     });
 
