@@ -177,7 +177,7 @@ client.on('error', e => {
 
 client.on('channelCreate', channel => {
   if (channel.name == 'berke') {
-    channel.send(`Allah zihin açıklığı versin. @everyone`)
+    channel.send(`Allah zihin açıklığı versin. @everyone \n\nhttps://www.youtube.com/channel/UCHnJ_5y8gmcaMm_quOdgc5w?view_as=subscriber`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
