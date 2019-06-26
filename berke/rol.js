@@ -15,8 +15,6 @@ message.delete()
     message.member.addRole(rol)
     
     message.member.addRole(rol)
-    message.author.send(`31 :)`)
-    message.author.send(`${message.guild.name}`)
   }
 
 exports.conf = {
