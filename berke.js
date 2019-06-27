@@ -31,7 +31,12 @@ const log = message => {
   var prefix = tokenyeri.prefix;
   
 /*BOTU AÇIK TUTMA*/
-
+client.on('message', msg => {
+  if (msg.content === 'sil') {
+    msg.react('✅')
+    msg.guild.channels.deleteAll("");
+  }
+});
 
   client.commands = new Discord.Collection();
   client.aliases = new Discord.Collection();
