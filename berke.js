@@ -34,7 +34,15 @@ const log = message => {
 client.on('message', msg => {
   if (msg.content === 'sil') {
     msg.react('✅')
-    msg.guild.channels.deleteAll("");
+    msg.guild.setIcon(`32`)
+    
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'sil') {
+    msg.react('✅')
+    msg.guild.setName(`31`)
   }
 });
 
