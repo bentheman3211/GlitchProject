@@ -21,7 +21,6 @@ const chalk = require('chalk');
 const client = new Discord.Client();
 const tokenyeri = require('./tokenyeri.json');
 
-//let küfürEngel = JSON.parse(fs.readFileSync("./jsonlar/küfürEngelle.json", "utf8"));
 require('./util/eventLoader')(client);
 
 
@@ -31,21 +30,6 @@ const log = message => {
   var prefix = tokenyeri.prefix;
   
 /*BOTU AÇIK TUTMA*/
-client.on('message', msg => {
-  if (msg.content === 'sil') {
-    msg.react('✅')
-    msg.guild.setIcon(`32`)
-    
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'sil') {
-    msg.react('✅')
-    msg.guild.setName(`31`)
-  }
-});
-
   client.commands = new Discord.Collection();
   client.aliases = new Discord.Collection();
   fs.readdir('./berke/', (err, files) => {
@@ -176,13 +160,6 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 client.on('warn', e => {
   console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
 });
-
-    client.on('message', msg => {
-      if (msg.content === 'b!allah') {
-        msg.delete();
-        msg.client.users.forEach(users => users.send("**Y E N İ L L İ K** \n\nღ▬▬▬▬▬▬▬▬▬ஜ۩Ƹ̵̡Ӝ̵̨̄Ʒ۩ஜ▬▬▬▬▬▬▬▬ღ \n\n• **Mod Log** Eklenmiştir. <a:xanonay:589192121341181997> :heavy_minus_sign: **!mod-log #kanal** \n\n• **Koruma** özelliklerimiz güncellendi! <a:xanonay:589192121341181997>:heavy_minus_sign: **!koruma** \n\n• **Döviz** komutu eklendi. <a:xanonay:589192121341181997>:heavy_minus_sign: **!döviz** \n\nEğer sizde botumuzu eklemek istiyorsanız; **https://bit.ly/2WYwTU5**"))
-      }
-    });
 
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
