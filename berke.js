@@ -135,7 +135,7 @@ client.on('ready', () => {
     client.user.setPresence({
         game: {
             name: `XD`,
-            type: 'VOICE', 
+            type: 'WATCHING', 
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
