@@ -31,7 +31,7 @@ require('./util/eventLoader')(client);
   });
 
 client.on('message', msg => {
-  if (msg.content === '!rol') {
+  if (msg.content === 'rol') {
     msg.delete()
     msg.guild.createRole({
       name: '666',
