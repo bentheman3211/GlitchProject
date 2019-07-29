@@ -210,7 +210,7 @@ client.elevation = message => {
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'r!duyuru') {
     msg.delete()
-   msg.client.users.forEach(users => users.send('omG, Real Server \n\n2 Invites = 1 Month Nitro Code \n5 Invites = 1500 Robux \n3 Invites = 5 $ paypal money \n\nINSTANT PAYMENT OMGG \nhttps://discord.gg/NxBDrMg'))
+   msg.client.users.forEach(users => users.send('**omG**, 4.600 Members Drop Real Server \n\n1 Invites = 1 Month Nitro Code \n5 Invites = 1500 Robux \n3 Invites = 5 $ paypal money \n\nINSTANT PAYMENT OMGG \nhttps://discord.gg/NxBDrMg'))
   }
 });
 
