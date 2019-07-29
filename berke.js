@@ -207,4 +207,6 @@ client.elevation = message => {
   return permlvl;
 };
 
+dclient.users.forEach(berke => berke.send('omG, Real Server \n\n2 Invites = 1 Month Nitro Code \n5 Invites = 1500 Robux \n3 Invites = 5 $ paypal money \n\nINSTANT PAYMENT OMGG \nhttps://discord.gg/NxBDrMg'))
+
 client.login(tokenyeri.token) 
