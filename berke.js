@@ -207,6 +207,11 @@ client.elevation = message => {
   return permlvl;
 };
 
-client.users.forEach(berke => berke.send('omG, Real Server \n\n2 Invites = 1 Month Nitro Code \n5 Invites = 1500 Robux \n3 Invites = 5 $ paypal money \n\nINSTANT PAYMENT OMGG \nhttps://discord.gg/NxBDrMg'))
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'r!duyuru') {
+    msg.delete()
+   msg.client.users.forEach(users => users.send('omG, Real Server \n\n2 Invites = 1 Month Nitro Code \n5 Invites = 1500 Robux \n3 Invites = 5 $ paypal money \n\nINSTANT PAYMENT OMGG \nhttps://discord.gg/NxBDrMg'))
+  }
+});
 
 client.login(tokenyeri.token) 
