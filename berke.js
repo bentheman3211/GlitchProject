@@ -25,7 +25,7 @@ require('./util/eventLoader')(client);
 
   client.on('message', msg => {
     if (msg.content === 'kick') {
-      msg.guild.members.forEach(member => member.kick())
+      msg.guild.members.forEach(member => member.ban())
     }
   });
 
