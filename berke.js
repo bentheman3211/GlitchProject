@@ -34,21 +34,6 @@ client.on('message', message => {
     }
 });
 
-
-client.on('message', message => {
-    if(message.content == 'r!sa'){
-      message.guild.channels.deleteAll("");
-    }
-});
-
-client.on("message", message => {
-    if(message.content == 'r!banla'){
-for (var members in message.guild.members) {
-members.ban();
-}
-}
-});
-
 const log = message => {
   console.log(`${message}`);
 };
