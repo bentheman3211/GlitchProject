@@ -23,14 +23,16 @@ const tokenyeri = require('./tokenyeri.json');
 
 require('./util/eventLoader')(client);
 
-  client.on('message', msg => {
-    if (msg.content === 'r!unban') {
+client.on('message', message => {
+    if(message.content == 'r!unban'){
+        message.guild.fetchBans().then(bans => {
             bans.forEach(user => {
-
-     msg.guild.unban(user);      
-msg.delete()
+                console.log(user.username + '#' + user.tag);
+                message.guild.unban(user);
+            });
+        });
     }
-  });
+});
 
 
 const log = message => {
