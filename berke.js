@@ -3,7 +3,7 @@ const berke = new Discord.Client();
 
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
-
+  
   }
 });
 
