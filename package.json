@@ -5,12 +5,13 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "bot.js",
+  "main": "berke.js",
   "scripts": {
     "start": "node berke.js"
   },
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "express": "^4.16.4"
   },
   "engines": {
     "node": "8.x"
