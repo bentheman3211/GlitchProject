@@ -3,6 +3,11 @@
 const Discord = require('discord.js');
 const berke = new Discord.Client();
 
+console.log('Hazırım.');
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
 
@@ -20,11 +25,13 @@ berke.on('message', async msg => {
   }
 });
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 berke.on('message', message => {
     if(message.content.toLowerCase() === 'ban kaldır' ) {
         message.guild.fetchBans().then(bans => {
             bans.forEach(user => {
-                console.log(user.username + '#' + user.tag);
                 message.guild.unban(user);
             });
         });
