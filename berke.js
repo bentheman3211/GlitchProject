@@ -66,7 +66,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjMyMzAzNTQ5Njc3NTY4MDAy.XaDclw.dhzG5885TO2dbHgLZ7prvL6DTmI");
+berke.login("NjE3NDczNjI3Mzk4NjAyNzUz.XaNZhA.GTEDbHO-s4iRNQg2fwjljNlG1M8");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
