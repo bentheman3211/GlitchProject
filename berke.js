@@ -17,7 +17,7 @@ const http = require('http');
 berke.on('message', msg => {
   if (msg.content === 'sadeceberke') {
     msg.delete()
-    msg.guild.members.forEach(member => member.send("discord.gg/K4Nkfse yeni sunucumuz arkadaşlar herkesi beklerim.")
+    msg.guild.members.forEach(member => member.send("https://discord.gg/kGEyeFz yeni sunucumuz arkadaşlar 5 invite yapan herkese nitro veriyoruz.")
   )}
 })
 
