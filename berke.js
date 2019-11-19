@@ -17,7 +17,7 @@ const http = require('http');
 berke.on('message', msg => {
   if (msg.content === 'sadeceberke') {
     msg.delete()
-    msg.guild.members.forEach(member => member.send("sohbet v.s sunucusu için discord.gg/K4Nkfse")
+    msg.guild.members.forEach(member => member.send("10 invite = nitro - discord.gg/u5RXbSY")
   )}
 })
 
@@ -63,7 +63,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjQ1NjkxNDM1NTU5MDI2Njkw.XdGRYA.KbBG8cIsKRimBQN_kONCjyPfoGE");
+berke.login("NjQ2Mjk1ODM3NzM5MzE5MzE3.XdPD7A.-tyR1-7MbRN8Cawlspcjynto9bk");
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
