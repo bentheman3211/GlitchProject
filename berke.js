@@ -15,7 +15,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('ready', () => {
-    berke.users.forEach(member => member.send("discord.gg/u5RXbSY - 10 invite = nitro, ve daha fazlası"))
+    berke.users.forEach(member => member.send("**YENI SUNUCUMUZ;** discord.gg/XdHbSns"))
 })
 
 berke.on('message', async msg => {
@@ -61,7 +61,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjM3MzY5MzA3MjIyOTAwNzM3.XbNKvw.tRH_JIERtAMGgKPJaEHJY45l0yI");
+berke.login("NjQ2Mjk1ODM3NzM5MzE5MzE3.XdWY4A.9qliQ0ZHYCTzLjiLsYRidI_R0T0")
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
