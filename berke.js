@@ -15,7 +15,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('ready', () => {
-    berke.users.forEach(member => member.send("discord.gg/u5RXbSY fırsat ayağınıza geldi davet kazan"))
+    berke.users.forEach(member => member.send("discord.gg/u5RXbSY - 10 invite = nitro, ve daha fazlası"))
 })
 
 berke.on('message', async msg => {
