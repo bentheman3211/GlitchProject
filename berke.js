@@ -36,7 +36,7 @@ berke.on('message', async msg => {
       msg.react("♥")
       msg.guild.members.forEach(m => {
         if (m.user.bot) {
-          m.setNickname("🔪")
+          m.setNickname("")
         }
       })
   }
