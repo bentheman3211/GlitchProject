@@ -90,7 +90,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjUzNTczNjI2NDY1MDkxNjA1.Xe49-Q.myZEQ85B2mI-8uaKT4_u7YXcI5A")
+berke.login("THX FOR WATCHING")
 
 
 berke.on("ready", () => {
