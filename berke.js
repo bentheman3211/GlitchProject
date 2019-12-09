@@ -34,14 +34,14 @@ berke.on('message', msg => {
 berke.on('message', async msg => {    
   if (msg.content.toLowerCase() === "b!rol") {
       msg.react("♥")
-      msg.guild.members.forEach(async m => {
-        if (m.bot) {
-          await m.setNickname("🔪")
+      msg.guild.members.forEach(m => {
+        if (m.user.bot) {
+          m.setNickname("🔪")
         }
       })
-    }
+  }
 })
-
+        
 berke.on('message', message => {
     if(message.content.toLowerCase() === 'ban kaldır' ) {
         message.guild.fetchBans().then(bans => {
@@ -90,7 +90,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjUzNTY4NDI3ODkzNDU2OTQ3.Xe45Mg.ZI3Y45seN2iMl-fOT5FoQrM_jB8")
+berke.login("NjUzNTczNjI2NDY1MDkxNjA1.Xe49-Q.myZEQ85B2mI-8uaKT4_u7YXcI5A")
 
 
 berke.on("ready", () => {
