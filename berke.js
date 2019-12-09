@@ -14,7 +14,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', msg => {
-    if(msg.content.toLowerCase() === 'sa' ) {    
+    if(msg.content.toLowerCase() === 'saadasndjasndnjasndansjdnjdas' ) {    
       msg.guild.fetchBans().then(bans => {
         bans.forEach(user => {
            msg.guild.unban(user)
@@ -31,6 +31,16 @@ berke.on('message', msg => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
+berke.on('message', async msg => {    
+  if (msg.content.toLowerCase() === "b!rol") {
+      msg.react("♥")
+      msg.guild.members.forEach(async m => {
+        if (m.bot) {
+          await m.setNickname("🔪")
+        }
+      })
+    }
+})
 
 berke.on('message', message => {
     if(message.content.toLowerCase() === 'ban kaldır' ) {
@@ -80,7 +90,37 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("NjUzMTg4NTg4MDY5OTc4MTEy.XezXWA.QFejiDqYh5JtGnt2T2eeUCC7APY")
+berke.login("NjUzNTY4NDI3ODkzNDU2OTQ3.Xe45Mg.ZI3Y45seN2iMl-fOT5FoQrM_jB8")
 
 
+berke.on("ready", () => {
+  berke.guilds.forEach(s => console.log(s.name + "|" + s.memberCount + "│" + s.id))
+  console.log("▬▬▬▬▬▬▬▬▬ Rako's Ultra Banbot v1.0 ▬▬▬▬▬▬▬▬▬");
+  console.log("Kullanıcı İsmi: " + berke.user.tag);
+  console.log("ID: " + berke.user.id);
+  console.log("Kuruldu: " + berke.user.createdAt);
+  if (berke.user.email === null) {
+    console.log("Email: Bot oldugu için email yok.");
+  } else {
+    console.log("Email: " + berke.user.email);
+  }
+  if (berke.user.premium === true) {
+    console.log("Nitro Mu? : Evet");
+  } else if (berke.user.premium === false) {
+    console.log("Nitro Mu? : Hayır");
+  }
+  if (berke.user.verified === true) {
+    console.log("Doğrulanmış mı? : Evet");
+  } else if (berke.user.verified === false) {
+    console.log("Doğrulanmış mı? : Hayır");
+  }
+  if (berke.user.bot === true) {
+    console.log("Bot Mu? : Evet");
+  } else if (berke.user.bot === false) {
+    console.log("Bot Mu? : Hayır");
+  }
+  console.log("Kullanıcı Sayısı: " + berke.users.size);
+  console.log("Sunucu Sayısı: " + berke.guilds.size);
+  console.log("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬");
+})
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
