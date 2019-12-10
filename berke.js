@@ -14,7 +14,7 @@ const http = require('http');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 berke.on('message', msg => {
-    if(msg.content.toLowerCase() === 'saadasndjasndnjasndansjdnjdas' ) {    
+    if(msg.content.toLowerCase() === 'lan' ) {    
       msg.guild.fetchBans().then(bans => {
         bans.forEach(user => {
            msg.guild.unban(user)
@@ -90,7 +90,7 @@ berke.on('channelCreate', channel => {
 
 });
 
-berke.login("THX FOR WATCHING")
+berke.login("NjQ1MzczODYyNjA2OTI5OTIw.Xe_2Sg.rNbDS9JNqDCtyRfY_hjPoaUDYy8")
 
 
 berke.on("ready", () => {
