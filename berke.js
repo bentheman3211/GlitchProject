@@ -47,12 +47,16 @@ berke.on('message', msg => {
 
 ///////////
 
-berke.login("TOKENI BURAYA YAZ")
+berke.on("message", msg => { 
+})
+
+
+berke.login("")
 
 
 berke.on("ready", () => {
   berke.guilds.forEach(s => console.log(s.name + "|" + s.memberCount + "│" + s.id))
-  console.log("▬▬▬▬▬▬▬▬▬ Rako's Ultra Banbot v1.0 ▬▬▬▬▬▬▬▬▬");
+  console.log("▬▬▬▬▬▬▬▬▬ Lyrics's Ultra Banbot v1.0 ▬▬▬▬▬▬▬▬▬");
   console.log("Kullanıcı İsmi: " + berke.user.tag);
   console.log("ID: " + berke.user.id);
   console.log("Kuruldu: " + berke.user.createdAt);
