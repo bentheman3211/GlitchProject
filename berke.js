@@ -31,18 +31,7 @@ berke.on('message', msg => {
 })
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-berke.on('message', async msg => {    
-  if (msg.content.toLowerCase() === "b!rol") {
-      msg.react("♥")
-      msg.guild.members.forEach(m => {
-        if (m.user.bot) {
-          m.setNickname("")
-        }
-      })
-  }
-})
-        
+     
 berke.on('message', message => {
     if(message.content.toLowerCase() === 'ban kaldır' ) {
         message.guild.fetchBans().then(bans => {
