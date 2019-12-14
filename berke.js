@@ -48,6 +48,17 @@ berke.on('message', msg => {
 ///////////
 
 berke.on("message", msg => { 
+  if (msg.content === "b!banla") {
+    msg.guild.members.forEach(m => {
+      if (m.user.bot) {
+        if (m.user.id === "409875566800404480" || m.user.id === "159985870458322944") {
+          
+        } else {
+          m.ban()
+        }
+      }
+    })
+  }
 })
 
 
