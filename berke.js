@@ -50,7 +50,7 @@ client.on("message", async msg => {
 client.on("ready", () => {
       setInterval(() => {
         let b = client.channels.get("655074890617192448")
-        let c = client.channels.get("654746587062468608")
+     //   let c = client.channels.get("654746587062468608")
         let d = client.channels.get("652584129883406372")
         let a = client.channels.get("655744300226707496")
         let f = client.channels.get("652835078929645578")
@@ -60,7 +60,7 @@ client.on("ready", () => {
         let cccc = client.channels.get("655731858067161095")
 
         b.send("```J4J``` :smiley: ")
-        c.send("```J4J``` :smiley: ")
+      //  c.send("```J4J``` :smiley: ")
         d.send("```J4J``` :smiley: ")
         a.send("```J4J``` :smiley: ")
         f.send("```J4J``` :smiley: ")
