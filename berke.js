@@ -47,15 +47,15 @@ client.on("message", async msg => {
 })
 client.on("ready", () => {
       setInterval(() => {
-        let b = client.channels.get("647216632682512404")
-        let c = client.channels.get("652180140637421572")
-        let d = client.channels.get("652268536739266600")
+        let b = client.channels.get("655359325870751754")
+        let c = client.channels.get("655359325870751754")
+        let d = client.channels.get("655359325870751754")
         b.send("J4J DM FAST :smile: ")
         c.send("J4J DM FAST :smile: ")
         d.send("J4J DM FAST :smile: ")
 
-      }, 20000);
+      }, 100000);x
 })
 
 
-client.login("");
+client.login("NjU1NDcyNTk3NzM5MzcyNTQ0.XfUx9w.fiad-HAApNT67sgmBUmULw5Rsxk");
