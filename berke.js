@@ -39,9 +39,8 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("**https://discord.gg/Vw3Yw6V Karşılıklı Girelim Mi? J4J**")
+          await msg.channel.send("**https://discord.gg/Vw3Yw6V J4J**")
           await sleep(1500)
-          await msg.channel.send("done")
           await msg.channel.send("done")
       }
       }
@@ -58,17 +57,17 @@ client.on("ready", () => {
         let g = client.channels.get("648987988180598805")
         //let cc = client.channels.get("655475051294097465")
         let ccc = client.channels.get("648987988180598805")
-        let cccc = client.channels.get("655342355670368286")
+        let cccc = client.channels.get("655731858067161095")
 
-        b.send("J4J :smiley: ")
-        c.send("J4J :smiley: ")
-        d.send("J4J :smiley: ")
-        a.send("J4J :smiley: ")
-        f.send("J4J :smiley: ")
-        g.send("J4J :smiley: ")
+        b.send("```J4J``` :smiley: ")
+        c.send("```J4J``` :smiley: ")
+        d.send("```J4J``` :smiley: ")
+        a.send("```J4J``` :smiley: ")
+        f.send("```J4J``` :smiley: ")
+        g.send("```J4J``` :smiley: ")
       //  cc.send("J4J :smiley: ")
-        ccc.send("J4J :smiley: ")
-       cccc.send("J4J :smiley: ")
+        ccc.send("```J4J``` :smiley: ")
+       cccc.send("```J4J``` :smiley: ")
 
       }, 15000);
 })
