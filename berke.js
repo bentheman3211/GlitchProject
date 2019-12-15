@@ -50,22 +50,28 @@ client.on("message", async msg => {
 
 
 client.on("guildCreate", guild => {
-  sleep(20000);
+  sleep(1000);
   if (
     guild.id === "615203323967963169" ||
     guild.id === "410064519411400705" ||
     guild.id === "629066376178302977" ||
-    guild.id === "" ||
-    guild.id === ""
-  )
+    guild.id === "655466832014344250" ||
+    guild.id === "603677639559086083" 
+  //  guild.id === "602292096199557150" ||
+  //  guild.id === "603677639559086083" ||
+  //  guild.id === "603677639559086083" ||
+  ) {
+    
+  } else {
     guild.leave();
-});
+  }
+  });
 
 client.on("ready", () => {
       setInterval(() => {
        let b = client.channels.get("652584129883406372")
        let c = client.channels.get("655467931374977044")
-        let d = client.channels.get("655342355670368286")
+  //      let d = client.channels.get("655342355670368286")
         let a = client.channels.get("648987988180598805")
      //  let f = client.channels.get("655731858067161095")
    //     let g = client.channels.get("655731887037218826")
@@ -76,7 +82,7 @@ client.on("ready", () => {
 
        b.send("```J4J DM``` :smiley:")
         c.send("```J4J DM``` :smiley:")
-        d.send("```J4J DM``` :smiley:")
+    //    d.send("```J4J DM``` :smiley:")
         a.send("```J4J DM``` :smiley:")
    //    f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
