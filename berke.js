@@ -39,7 +39,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("**https://discord.gg/qNNMf4F Karşılıklı Girelim Mi? J4J**")
+          await msg.channel.send("**https://discord.gg/RTVFyyD Karşılıklı Girelim Mi? J4J**")
       }
       }
     }
