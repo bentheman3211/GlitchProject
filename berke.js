@@ -51,14 +51,14 @@ client.on("message", async msg => {
 client.on("ready", () => {
       setInterval(() => {
         let b = client.channels.get("655074890617192448")
-        let c = client.channels.get("655342355670368286")
-        let d = client.channels.get("655744300226707496")
-        let a = client.channels.get("652835078929645578")
-        let f = client.channels.get("655475051294097465")
-        let g = client.channels.get("655731858067161095")
-        let cc = client.channels.get("654746587062468608")
+        let c = client.channels.get("654746587062468608")
+        let d = client.channels.get("652584129883406372")
+        let a = client.channels.get("655744300226707496")
+        let f = client.channels.get("652835078929645578")
+        let g = client.channels.get("648987988180598805")
+        //let cc = client.channels.get("655475051294097465")
         let ccc = client.channels.get("648987988180598805")
-        let cccc = client.channels.get("652584129883406372")
+        let cccc = client.channels.get("655342355670368286")
 
         b.send("J4J :smiley: ")
         c.send("J4J :smiley: ")
@@ -66,11 +66,11 @@ client.on("ready", () => {
         a.send("J4J :smiley: ")
         f.send("J4J :smiley: ")
         g.send("J4J :smiley: ")
-        cc.send("J4J :smiley: ")
+      //  cc.send("J4J :smiley: ")
         ccc.send("J4J :smiley: ")
-        cccc.send("J4J :smiley: ")
+       cccc.send("J4J :smiley: ")
 
-      }, 10000);
+      }, 15000);
 })
 
 
