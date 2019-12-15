@@ -39,7 +39,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("**https://discord.gg/RTVFyyD Karşılıklı Girelim Mi? J4J**")
+          await msg.channel.send("**https://discord.gg/Vw3Yw6V Karşılıklı Girelim Mi? J4J**")
       }
       }
     }
@@ -53,7 +53,8 @@ client.on("ready", () => {
         let a = client.channels.get("652835078929645578")
         let f = client.channels.get("655475051294097465")
         let g = client.channels.get("655731858067161095")
-
+        let 1 = client.channels.get("655731858067161095")
+654746587062468608
         b.send("J4J türkler gelsin :smiley: ")
         c.send("J4J türkler gelsin :smiley: ")
         d.send("J4J türkler gelsin :smiley: ")
@@ -61,7 +62,7 @@ client.on("ready", () => {
         f.send("J4J türkler gelsin :smiley: ")
         g.send("J4J türkler gelsin :smiley: ")
 
-      }, 10000);
+      }, 20000);
 })
 
 
