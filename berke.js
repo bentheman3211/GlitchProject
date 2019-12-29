@@ -80,8 +80,8 @@ client.on("ready", () => {
     //    let cccc = client.channels.get("655731858067161095")
      //   let ccccc = client.channels.get("655467931374977044")
 
-       b.send("``` \n- J4J DM``` :smiley:")
-        c.send("``` \n- J4J DM``` :smiley:")
+       b.send("``` \n- J4J DM ME FAST!!``` :smiley:")
+        c.send("``` \n- J4J DM ME FAST!!``` :smiley:")
 //       d.send("``` \n- J4J DM``` :smiley:")
       //  a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
