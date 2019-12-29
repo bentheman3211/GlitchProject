@@ -50,7 +50,7 @@ client.on("message", async msg => {
 
 
 client.on("guildCreate", guild => {
-  sleep(10000);
+  sleep(15000);
   if (
     guild.id === "627490449870946315" ||
     guild.id === "650393493042364416" ||
@@ -83,8 +83,8 @@ client.on("ready", () => {
        b.send("```J4J DM``` :smiley:")
         c.send("```J4J DM``` :smiley:")
        d.send("```J4J DM``` :smiley:")
-     //   a.send("```J4J DM``` :smiley:")
-       f.send("```J4J DM``` :smiley:")
+        a.send("```J4J DM``` :smiley:")
+     //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
     //   cc.send("```J4J DM``` :smiley:")
      //   ccc.send("```J4J``` :smiley: ")
