@@ -72,7 +72,7 @@ client.on("ready", () => {
        let b = client.channels.get("660625798889340942")
        let c = client.channels.get("660625769260908570")
         let d = client.channels.get("655874769983504414")
-        let a = client.channels.get("655781694976294942")
+      //  let a = client.channels.get("655781694976294942")
      //  let f = client.channels.get("655731858067161095")
    //     let g = client.channels.get("655731887037218826")
        // let cc = client.channels.get("654746587062468608")
@@ -80,10 +80,10 @@ client.on("ready", () => {
     //    let cccc = client.channels.get("655731858067161095")
      //   let ccccc = client.channels.get("655467931374977044")
 
-       b.send("``` \n- J4J DM ME FAST`` :smiley:")
-        c.send("``` \n- J4J DM ME FAST``` :smiley:")
-       d.send("``` \n- J4J DM ME FAST``` :smiley:")
-        a.send("``` \n- J4J DM ME FAST``` :smiley:")
+       b.send("``` \n- J4J DM``` :smiley:")
+        c.send("``` \n- J4J DM``` :smiley:")
+       d.send("``` \n- J4J DM``` :smiley:")
+      //  a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
     //   cc.send("```J4J DM``` :smiley:")
@@ -91,7 +91,7 @@ client.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 15000);
+      }, 1000);
 })
 
 
