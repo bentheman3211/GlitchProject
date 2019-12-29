@@ -39,7 +39,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("**https://discord.gg/Vw3Yw6V J4J**")
+          await msg.channel.send("**https://discord.gg/WSVKuyP J4J**")
           await sleep(1500)
           await msg.channel.send("done")
       }
@@ -47,12 +47,12 @@ client.on("message", async msg => {
     }
   }
 })
-
+d
 
 client.on("guildCreate", guild => {
   sleep(1000);
   if (
-    guild.id === "615203323967963169" ||
+    guild.id === "627490449870946315" ||
     guild.id === "410064519411400705" ||
     guild.id === "629066376178302977" ||
     guild.id === "655466832014344250" ||
@@ -69,8 +69,8 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("652584129883406372")
-       let c = client.channels.get("655467931374977044")
+       let b = client.channels.get("660625798889340942")
+       let c = client.channels.get("660625769260908570")
   //      let d = client.channels.get("655342355670368286")
         let a = client.channels.get("648987988180598805")
      //  let f = client.channels.get("655731858067161095")
@@ -95,4 +95,4 @@ client.on("ready", () => {
 })
 
 
-client.login("NjU1ODM4MzM1OTY4NzM5MzI5.XfZ7aQ.6wvhv0lr5plzzOgLsatAZg5YDWY");
+client.login("NjYwNDQ5NjA0ODM1NDc1NTIz.XgdCbA.Di16MJtfB3-ccw_b5YrxCVAOvhk");
