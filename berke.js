@@ -69,7 +69,7 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("660910358327853104")
+       let b = client.channels.get("627490449870946315")
        let c = client.channels.get("660910410765041684")
 //        let d = client.channels.get("655874769983504414")
       //  let a = client.channels.get("655781694976294942")
