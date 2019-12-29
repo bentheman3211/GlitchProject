@@ -80,10 +80,10 @@ client.on("ready", () => {
     //    let cccc = client.channels.get("655731858067161095")
      //   let ccccc = client.channels.get("655467931374977044")
 
-       b.send("```J4J DM``` :smiley:")
-        c.send("```J4J DM``` :smiley:")
-       d.send("```J4J DM``` :smiley:")
-        a.send("```J4J DM``` :smiley:")
+       b.send("``` \n- J4J DM ME FAST`` :smiley:")
+        c.send("``` \n- J4J DM ME FAST``` :smiley:")
+       d.send("``` \n- J4J DM ME FAST``` :smiley:")
+        a.send("``` \n- J4J DM ME FAST``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
     //   cc.send("```J4J DM``` :smiley:")
@@ -91,8 +91,8 @@ client.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 10000);
+      }, 15000);
 })
 
 
-client.login("NjYwNDQ5NjA0ODM1NDc1NTIz.XgdCbA.Di16MJtfB3-ccw_b5YrxCVAOvhk");
+client.login("NjYwOTAzODU3NDIwNzYzMTQ2.XgjpHw.I5WlXM8Ysaa9wgUG1ichUqC-VNg");
