@@ -69,9 +69,9 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("627490449870946315")
+       let b = client.channels.get("660910358327853104")
        let c = client.channels.get("660910410765041684")
-//        let d = client.channels.get("655874769983504414")
+        let d = client.channels.get("655781694976294942")
       //  let a = client.channels.get("655781694976294942")
      //  let f = client.channels.get("655731858067161095")
    //     let g = client.channels.get("655731887037218826")
@@ -82,7 +82,7 @@ client.on("ready", () => {
 
        b.send("``` \n- J4J DM ME FAST!!``` :smiley:")
         c.send("``` \n- J4J DM ME FAST!!``` :smiley:")
-//       d.send("``` \n- J4J DM``` :smiley:")
+     d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
       //  a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
@@ -91,8 +91,8 @@ client.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 1000);
+      }, 20000);
 })
 
 
-client.login("NjYwOTAzODU3NDIwNzYzMTQ2.XgjpHw.I5WlXM8Ysaa9wgUG1ichUqC-VNg");
+client.login("NjYwOTMxNTM3NDc4NjE1MDgx.XgkEIA.9Vnbgo9xoQH6PpShRjMxlFMiCPI");
