@@ -42,6 +42,8 @@ client.on("message", async msg => {
           await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/RgJ3Fx J4J**")
           await sleep(1500)
           await msg.channel.send("done")
+          await sleep(2000)
+          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/K2ABE3 J4J**")          
       }
       }
     }
@@ -82,7 +84,7 @@ client.on("ready", () => {
 
        b.send("``` \n- J4J DM ME FAST!!``` :smiley:")
         c.send("``` \n- J4J DM ME FAST!!``` :smiley:")
-     d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
+//     d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
       //  a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
@@ -91,7 +93,7 @@ client.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 20000);
+      }, 2000);
 })
 
 
