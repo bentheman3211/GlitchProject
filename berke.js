@@ -45,11 +45,10 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/RgJ3Fx J4J**")
-          await sleep(1500)
-          await msg.channel.send("done")
           await sleep(2000)
-          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/K2ABE3 J4J**")          
+          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/K2ABE3 J4J**")  
+          await sleep(2000)
+          await msg.channel.send("done")        
       }
       }
     }
