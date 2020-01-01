@@ -22,11 +22,6 @@ const client = new Discord.Client();
 const client2 = new Discord.Client();
 const data = new Map();
 
-client.on('ready', () => {
-        console.log(`${client2.user.username} ismi ile giriş yapıldı! ${client2.guilds.size} Sunucu, ${client2.users.size} Kullanıcı.`);
-      client2.user.setActivity('Karşılıklı Sunucu DM.')
-});
-
 client2.on('ready', () => {
         console.log(`${client2.user.username} ismi ile giriş yapıldı! ${client2.guilds.size} Sunucu, ${client2.users.size} Kullanıcı.`);
       client2.user.setActivity('Karşılıklı Sunucu DM.')
