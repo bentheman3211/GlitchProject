@@ -73,7 +73,7 @@ client.on("ready", () => {
        let c = client.channels.get("661615297769373697")
         let d = client.channels.get("655781694976294942")
         let a = client.channels.get("644945540873846815")
-     //  let f = client.channels.get("655731858067161095")
+       let f = client.channels.get("661905322377740299")
    //     let g = client.channels.get("655731887037218826")
        // let cc = client.channels.get("654746587062468608")
    //     let ccc = client.channels.get("648987988180598805")
@@ -82,8 +82,8 @@ client.on("ready", () => {
 
        b.send("``` \n- J4J DM ME FAST!!``` :smiley:")
         c.send("``` \n- J4J DM ME FAST!!``` :smiley:")
-       d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
-        a.send("``` \n- J4J DM``` :smiley:")
+//       d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
+//        a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
    //     g.send("```J4J DM``` :smiley:")
     //   cc.send("```J4J DM``` :smiley:")
@@ -94,4 +94,4 @@ client.on("ready", () => {
       }, 5000);
 })
 
-client.login("NjYxOTE2ODc4OTQzNDIwNDE3.XgyYVQ.-lH8Pqysw8iltWkpZEgethEq5cU");
+client.login("NjYxOTE5NjQzODMyODExNTIw.XgyawQ.Ni5WXNysnuVR3Xw-XasZGxLCK3A");
