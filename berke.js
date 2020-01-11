@@ -91,7 +91,7 @@ client2.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 5000);
+      }, 10000);
 })
 
 client2.login("NjYzMjU3MDgyNDk3MzM1MzM2.XhF4yQ.fpP4k3N3iAl7Op2k1eSZneWcxX4")
