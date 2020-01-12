@@ -65,7 +65,7 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("665635841552416821")
+       let b = client.channels.get("665948629584052228")
        let c = client.channels.get("665230478004977664")
 
        b.send("``` - J4J DM ME FAST!!``` :smiley:")
