@@ -19,17 +19,16 @@ app.get("/", (request, response) => {
     }, 3000);
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const client2 = new Discord.Client();
 const data = new Map();
 
-client2.on('ready', () => {
-        console.log(`${client2.user.username} ismi ile giriş yapıldı! ${client2.guilds.size} Sunucu, ${client2.users.size} Kullanıcı.`);
-      client2.user.setActivity('Karşılıklı Sunucu DM.')
+client.on('ready', () => {
+        console.log(`${client.user.username} ismi ile giriş yapıldı! ${client.guilds.size} Sunucu, ${client.users.size} Kullanıcı.`);
+      client.user.setActivity('Karşılıklı Sunucu DM.')
 });
 
-client2.on("message", async msg => {
+client.on("message", async msg => {
   if (msg.channel.type === "dm") {
-    if (msg.author.id === client2.user.id) {
+    if (msg.author.id === client.user.id) {
     } else {
       if (msg.author.bot) {
       } else {
@@ -49,7 +48,7 @@ client2.on("message", async msg => {
 })
 
 
-client2.on("guildCreate", guild => {
+client.on("guildCreate", guild => {
   sleep(30000);
   if (
     guild.id === "627490449870946315" ||
@@ -67,10 +66,10 @@ client2.on("guildCreate", guild => {
   }
   });
 
-client2.on("ready", () => {
+client.on("ready", () => {
       setInterval(() => {
-       let b = client2.channels.get("665233568989052938")
-       let c = client2.channels.get("665230478004977664")
+       let b = client.channels.get("665233568989052938")
+       let c = client.channels.get("665230478004977664")
    //     let d = client2.channels.get("655781694976294942")
     //    let a = client2.channels.get("644945540873846815")
      //  let f = client2.channels.get("661905322377740299")
@@ -80,8 +79,8 @@ client2.on("ready", () => {
     //    let cccc = client2.channels.get("655731858067161095")
      //   let ccccc = client2.channels.get("655467931374977044")
 
-       b.send("``` \n- J4J DM ME FAST!!``` :smiley:")
-        c.send("``` \n- J4J DM ME FAST!!``` :smiley:")
+       b.send("``` - J4J DM ME FAST!!``` :smiley:")
+        c.send("``` - J4J DM ME FAST!!``` :smiley:")
 //       d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
 //        a.send("``` \n- J4J DM``` :smiley:")
      //  f.send("```J4J DM``` :smiley:")
@@ -94,5 +93,4 @@ client2.on("ready", () => {
       }, 10000);
 })
 
-client2.login("NjYzMjU3MDgyNDk3MzM1MzM2.XhF4yQ.fpP4k3N3iAl7Op2k1eSZneWcxX4")
-//client.login("NjYxOTE5NjQzODMyODExNTIw.XgyawQ.Ni5WXNysnuVR3Xw-XasZGxLCK3A");
+client.login("NjYzMjU3MDgyNDk3MzM1MzM2.XhF4yQ.fpP4k3N3iAl7Op2k1eSZneWcxX4")
