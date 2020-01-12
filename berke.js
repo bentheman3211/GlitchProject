@@ -56,9 +56,6 @@ client.on("guildCreate", guild => {
     guild.id === "629066376178302977" ||
     guild.id === "644945540873846815" ||
     guild.id === "665483940466786304" 
-  //  guild.id === "650433644820955136" ||
-  //  guild.id === "603677639559086083" ||
-  //  guild.id === "603677639559086083" ||
   ) {
     
   } else {
@@ -70,28 +67,11 @@ client.on("ready", () => {
       setInterval(() => {
        let b = client.channels.get("665635841552416821")
        let c = client.channels.get("665230478004977664")
-   //     let d = client2.channels.get("655781694976294942")
-    //    let a = client2.channels.get("644945540873846815")
-     //  let f = client2.channels.get("661905322377740299")
-   //     let g = client2.channels.get("655731887037218826")
-       // let cc = client2.channels.get("654746587062468608")
-   //     let ccc = client2.channels.get("648987988180598805")
-    //    let cccc = client2.channels.get("655731858067161095")
-     //   let ccccc = client2.channels.get("655467931374977044")
 
        b.send("``` - J4J DM ME FAST!!``` :smiley:")
         c.send("``` - J4J DM ME FAST!!``` :smiley:")
-//       d.send("``` \n- J4J DM DM ME FAST``` :smiley:")
-//        a.send("``` \n- J4J DM``` :smiley:")
-     //  f.send("```J4J DM``` :smiley:")
-   //     g.send("```J4J DM``` :smiley:")
-    //   cc.send("```J4J DM``` :smiley:")
-     //   ccc.send("```J4J``` :smiley: ")
-      //  cccc.send("```J4J``` :smiley: ")
-       // ccccc.send("```J4J``` :smiley: ")
 
       }, 5000);
 })
 
-//client.login("NjYzMTQwNDE0MDc3MDA5OTY4.XhEMmA.p_SIFl4VKgwbNEebJSA1AC5O4kQ")
 client.login("NjY1NDk0MzM0ODg3NjkwMjQ0.XhrfXw.haDHrvhywTpabAWW4nDMHROjzPQ")
