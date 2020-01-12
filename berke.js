@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/3kzcj7T J4J**")          
+          await msg.channel.send("https://i.imgur.com/52PghD0.gif **https://discord.gg/G6PapJy J4J**")          
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -68,7 +68,7 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("665233568989052938")
+       let b = client.channels.get("665635841552416821")
        let c = client.channels.get("665230478004977664")
    //     let d = client2.channels.get("655781694976294942")
     //    let a = client2.channels.get("644945540873846815")
@@ -90,7 +90,7 @@ client.on("ready", () => {
       //  cccc.send("```J4J``` :smiley: ")
        // ccccc.send("```J4J``` :smiley: ")
 
-      }, 10000);
+      }, 5000);
 })
 
-client.login("NjYzMjU3MDgyNDk3MzM1MzM2.XhF4yQ.fpP4k3N3iAl7Op2k1eSZneWcxX4")
+client.login("NjY1NDk0MzM0ODg3NjkwMjQ0.XhrfXw.haDHrvhywTpabAWW4nDMHROjzPQ")
