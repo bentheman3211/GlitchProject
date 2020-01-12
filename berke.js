@@ -65,13 +65,13 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let b = client.channels.get("665948629584052228")
-       let c = client.channels.get("665230478004977664")
+       let b = client.channels.get("665997089804648448")
+       let c = client.channels.get("665997435478343701")
 
        b.send("``` - J4J DM ME FAST!!``` :smiley:")
         c.send("``` - J4J DM ME FAST!!``` :smiley:")
 
-      }, 5000);
+      }, 1000);
 })
 
-client.login("NjY1NDk0MzM0ODg3NjkwMjQ0.XhsvTw.RddM3kyKNca2wetFzzNyh1afqQU")
+client.login("NjY1OTk4NzM2NTE3NzU4OTg2.Xhtx3w.qFb6WpO2fs8Z0huQd0L_7ba_nss")
