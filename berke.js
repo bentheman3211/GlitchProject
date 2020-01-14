@@ -49,7 +49,7 @@ client.on("message", async msg => {
 
 
 client.on("guildCreate", guild => {
-  sleep(30000);
+  sleep(1000);
   if (
     guild.id === "627490449870946315" ||
     guild.id === "661272133996904449" 
@@ -73,8 +73,8 @@ client.on("ready", () => {
      //  let j = client.channels.get("655781694976294942")
 
 
-       b.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
-       a.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
+       b.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
+       a.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
      //   a.send("``` - J4J DM ME FAST!!``` :smiley:")
     //    d.send("``` - J4J DM ME FAST!!``` :smiley:")
      //   e.send("``` - J4J DM ME FAST!!``` :smiley:")
@@ -84,7 +84,7 @@ client.on("ready", () => {
      //   j.send("``` - J4J DM ME FAST!!``` :smiley:")
 
 
-      }, 20000);
+      }, 1000);
 })
 
 client.login("mfa.-jV74SqxEcCw7nQXN2kgkWzLzuRHnXvfBzuhN6FdKt99JLXhHZVkjDEBAGuBrdnm2EbKmfBupRnT0Vesf5-p")
