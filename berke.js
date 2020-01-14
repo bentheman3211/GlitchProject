@@ -62,8 +62,8 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("665997435478343701")
-       let b = client.channels.get("666338656323371049")
+       let a = client.channels.get("666668859419263003")
+       let b = client.channels.get("666669101766279201")
     //   let c = client.channels.get("661532592985735199")
     //   let d = client.channels.get("653186220020465665")
      //  let e = client.channels.get("665284933761236992")
@@ -73,8 +73,8 @@ client.on("ready", () => {
      //  let j = client.channels.get("655781694976294942")
 
 
-       b.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
-       a.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
+       b.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J ``` :smiley:")
+       a.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J ``` :smiley:")
      //   a.send("``` - J4J DM ME FAST!!``` :smiley:")
     //    d.send("``` - J4J DM ME FAST!!``` :smiley:")
      //   e.send("``` - J4J DM ME FAST!!``` :smiley:")
