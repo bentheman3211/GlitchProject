@@ -51,15 +51,8 @@ client.on("message", async msg => {
 client.on("guildCreate", guild => {
   sleep(30000);
   if (
-    guild.id === "659640329208856576" ||
-    guild.id === "648119704916852736" ||
-    guild.id === "661177516274221066" ||
-    guild.id === "664162561704329217" ||
-    guild.id === "597358881391509504" ||
-    guild.id === "644945540873846815" ||
-    guild.id === "650393493042364416" ||
-    guild.id === "589413911304863746" ||
-    guild.id === "653266058374807552"
+    guild.id === "627490449870946315" ||
+    guild.id === "661272133996904449" 
   ) {
     
   } else {
@@ -69,26 +62,26 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("666338656323371049")
-       let b = client.channels.get("665997435478343701")
-       let c = client.channels.get("661532592985735199")
-       let d = client.channels.get("653186220020465665")
-       let e = client.channels.get("665284933761236992")
-       let f = client.channels.get("665639206512492544")
-       let g = client.channels.get("652268536739266600")
-       let h = client.channels.get("652835078929645578")
-       let j = client.channels.get("655781694976294942")
+       let a = client.channels.get("665997435478343701")
+       let b = client.channels.get("666338656323371049")
+    //   let c = client.channels.get("661532592985735199")
+    //   let d = client.channels.get("653186220020465665")
+     //  let e = client.channels.get("665284933761236992")
+   //    let f = client.channels.get("665639206512492544")
+     //  let g = client.channels.get("652268536739266600")
+    //   let h = client.channels.get("652835078929645578")
+     //  let j = client.channels.get("655781694976294942")
 
 
-       b.send("``` - J4J DM ME FAST!!``` :smiley:")
-        c.send("``` - J4J DM ME FAST!!``` :smiley:")
-        a.send("``` - J4J DM ME FAST!!``` :smiley:")
-        d.send("``` - J4J DM ME FAST!!``` :smiley:")
-        e.send("``` - J4J DM ME FAST!!``` :smiley:")
+       b.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
+       a.send("``` - J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!! \n- J4J DM ME FAST!!``` :smiley:")
+     //   a.send("``` - J4J DM ME FAST!!``` :smiley:")
+    //    d.send("``` - J4J DM ME FAST!!``` :smiley:")
+     //   e.send("``` - J4J DM ME FAST!!``` :smiley:")
     //    f.send("``` - J4J DM ME FAST!!``` :smiley:")
   //      g.send("``` - J4J DM ME FAST!!``` :smiley:")
-        h.send("``` - J4J DM ME FAST!!``` :smiley:")
-        j.send("``` - J4J DM ME FAST!!``` :smiley:")
+  //      h.send("``` - J4J DM ME FAST!!``` :smiley:")
+     //   j.send("``` - J4J DM ME FAST!!``` :smiley:")
 
 
       }, 20000);
