@@ -69,15 +69,15 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("666293655471915013")
+       let a = client.channels.get("666338656323371049")
        let b = client.channels.get("665997435478343701")
        let c = client.channels.get("661532592985735199")
        let d = client.channels.get("653186220020465665")
        let e = client.channels.get("665284933761236992")
-   //    let f = client.channels.get("665639206512492544")
+       let f = client.channels.get("665639206512492544")
        let g = client.channels.get("652268536739266600")
        let h = client.channels.get("652835078929645578")
-    //   let j = client.channels.get("655781694976294942")
+       let j = client.channels.get("655781694976294942")
 
 
        b.send("``` - J4J DM ME FAST!!``` :smiley:")
@@ -85,13 +85,13 @@ client.on("ready", () => {
         a.send("``` - J4J DM ME FAST!!``` :smiley:")
         d.send("``` - J4J DM ME FAST!!``` :smiley:")
         e.send("``` - J4J DM ME FAST!!``` :smiley:")
-    //    f.send("``` - J4J DM ME FAST!!``` :smiley:")
+        f.send("``` - J4J DM ME FAST!!``` :smiley:")
   //      g.send("``` - J4J DM ME FAST!!``` :smiley:")
         h.send("``` - J4J DM ME FAST!!``` :smiley:")
-    //    j.send("``` - J4J DM ME FAST!!``` :smiley:")
+        j.send("``` - J4J DM ME FAST!!``` :smiley:")
 
 
       }, 20000);
 })
 
-client.login("NjY1OTk4NzM2NTE3NzU4OTg2.Xhtx3w.qFb6WpO2fs8Z0huQd0L_7ba_nss")
+client.login("mfa.-jV74SqxEcCw7nQXN2kgkWzLzuRHnXvfBzuhN6FdKt99JLXhHZVkjDEBAGuBrdnm2EbKmfBupRnT0Vesf5-p")
