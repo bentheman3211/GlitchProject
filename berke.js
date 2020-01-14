@@ -85,7 +85,7 @@ client.on("ready", () => {
         a.send("``` - J4J DM ME FAST!!``` :smiley:")
         d.send("``` - J4J DM ME FAST!!``` :smiley:")
         e.send("``` - J4J DM ME FAST!!``` :smiley:")
-        f.send("``` - J4J DM ME FAST!!``` :smiley:")
+    //    f.send("``` - J4J DM ME FAST!!``` :smiley:")
   //      g.send("``` - J4J DM ME FAST!!``` :smiley:")
         h.send("``` - J4J DM ME FAST!!``` :smiley:")
         j.send("``` - J4J DM ME FAST!!``` :smiley:")
