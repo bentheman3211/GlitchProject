@@ -62,8 +62,8 @@ client.on("guildCreate", guild => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("666668859419263003")
-       let b = client.channels.get("666669101766279201")
+       let a = client.channels.get("667005104724901909")
+       let b = client.channels.get("667005104724901909")
     //   let c = client.channels.get("661532592985735199")
     //   let d = client.channels.get("653186220020465665")
      //  let e = client.channels.get("665284933761236992")
@@ -87,4 +87,4 @@ client.on("ready", () => {
       }, 1000);
 })
 
-client.login("mfa.-jV74SqxEcCw7nQXN2kgkWzLzuRHnXvfBzuhN6FdKt99JLXhHZVkjDEBAGuBrdnm2EbKmfBupRnT0Vesf5-p")
+client.login("NjY3MDQwNDk1NTMyMzc2MTA5.Xh88kA.uNtNGbN_fioi-tjsmrvuWJboIdU")
