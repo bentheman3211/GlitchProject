@@ -23,7 +23,6 @@ const data = new Map();
 
 client.on('ready', () => {
         console.log(`${client.user.username} ismi ile giriş yapıldı! ${client.guilds.size} Sunucu, ${client.users.size} Kullanıcı.`);
-      client.user.setActivity('Karşılıklı Sunucu DM.')
 });
 
 client.on("message", async msg => {
