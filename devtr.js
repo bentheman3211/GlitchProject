@@ -64,10 +64,21 @@ client.on("ready", () => {
        let a = client.channels.get("676074236351348737")
 
 
-       a.send("``` - J4J DM ME VERY FAST JOIN ```")
+       a.send("J4J DM")
 
 
-      }, 20000);
+      }, 15000);
 })
 
-client.login("Njc2MTIwNzYzMjMyNjgyMDIy.XkBEzA.7AqrNUp01DGaJbNBzvLHfx0I4MY")
+client.on("ready", () => {
+      setInterval(() => {
+       let a = client.channels.get("676074236351348737")
+
+
+       a.send("J4J DM fast pls!!!")
+
+
+      }, 35000);
+})
+
+client.login("Njc2MTIyNzkwMTU1NTE4MDEy.XkBGng.HeBwfNsmAu9GgnPfNbjTry3SPnM")
