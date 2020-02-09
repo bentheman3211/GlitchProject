@@ -75,10 +75,10 @@ client.on("ready", () => {
        let a = client.channels.get("676156822750625792")
 
 
-       a.send("<:j_:667265746321276928><:j_:667265746321276928>")
+       a.send("j4j brothers")
 
 
-      }, 15000);
+      }, 40000);
 })
 
 client.login("Njc2MTQ5OTI0NjE4MDQzMzkz.XkBgEA.PDEq6WHCaIXon-sOHILObB2IVZA")
