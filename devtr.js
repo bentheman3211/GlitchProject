@@ -61,7 +61,7 @@ client.on("guildCreate", devtr => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676156822750625792")
+       let a = client.channels.get("676074271742623784")
 
 
        a.send("J4J DM")
@@ -72,7 +72,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676156822750625792")
+       let a = client.channels.get("676074271742623784")
 
 
        a.send("j4j brothers")
