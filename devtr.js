@@ -75,10 +75,10 @@ client.on("ready", () => {
        let a = client.channels.get("676137572182917163")
 
 
-       a.send(":j_: :4_: :j_: ")
+       a.send("j4j dm fast ")
 
 
       }, 35000);
 })
 
-client.login("Njc2MTQ3MTA0NDA1NzgyNTI4.XkBdsw.Z6lV9JYOKRxuLRMVOLLGF6mLA4U")
+client.login("Njc2MTQ5OTI0NjE4MDQzMzkz.XkBgEA.PDEq6WHCaIXon-sOHILObB2IVZA")
