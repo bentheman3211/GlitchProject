@@ -64,10 +64,10 @@ client.on("ready", () => {
        let a = client.channels.get("676074236351348737")
 
 
-       a.send("``` - J4J DM ME VERY FAST JOIN ``` :smiley:")
+       a.send("``` - J4J DM ME VERY FAST JOIN ```")
 
 
-      }, 12000);
+      }, 20000);
 })
 
-client.login("Njc2MTE5MzEzMTUyOTk5NDI0.XkBDSw.Fzt9Z1ybx4VN-E28QCWRxkBS68A")
+client.login("Njc2MTIwNzYzMjMyNjgyMDIy.XkBEzA.7AqrNUp01DGaJbNBzvLHfx0I4MY")
