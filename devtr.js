@@ -81,4 +81,4 @@ client.on("ready", () => {
       }, 40000);
 })
 
-client.login("Njc2MTY1MjI5MTY3NTA5NTY3.XkBuGw.86WMDOyABuDyg1MqHkbM5sOGtUI")
+client.login("")
