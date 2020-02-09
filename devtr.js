@@ -61,7 +61,7 @@ client.on("guildCreate", devtr => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676074236351348737")
+       let a = client.channels.get("676137572182917163")
 
 
        a.send("J4J DM")
@@ -72,7 +72,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676074236351348737")
+       let a = client.channels.get("676137572182917163")
 
 
        a.send("J4J DM fast pls!!!")
@@ -81,4 +81,4 @@ client.on("ready", () => {
       }, 35000);
 })
 
-client.login("Njc2MTMwMDI4NjIyMzE1NTQx.XkBNTQ.zPhLJNP2Xyc0REtT-N3C1KvsJ1s")
+client.login("Njc2MTM2OTI4NTgzNjE0NDg0.XkBU6A.JZFENd1KjqUwsrtlFSd8lg4iXZA")
