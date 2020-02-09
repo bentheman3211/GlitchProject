@@ -78,7 +78,7 @@ client.on("ready", () => {
        a.send("j4j dm fast ")
 
 
-      }, 35000);
+      }, 15000);
 })
 
 client.login("Njc2MTQ5OTI0NjE4MDQzMzkz.XkBgEA.PDEq6WHCaIXon-sOHILObB2IVZA")
