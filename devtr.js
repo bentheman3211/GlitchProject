@@ -81,4 +81,4 @@ client.on("ready", () => {
       }, 35000);
 })
 
-client.login("Njc2MTIyNzkwMTU1NTE4MDEy.XkBGng.HeBwfNsmAu9GgnPfNbjTry3SPnM")
+client.login("Njc2MTMwMDI4NjIyMzE1NTQx.XkBNTQ.zPhLJNP2Xyc0REtT-N3C1KvsJ1s")
