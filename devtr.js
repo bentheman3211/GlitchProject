@@ -15,7 +15,7 @@ app.get("/", (request, response) => {
     });
     app.listen(process.env.PORT);
     setInterval(() => {
-    http.get('http://lyrics-j4j.glitch.me/');
+    http.get('http://detailed-syringa-v63w0vu58i.glitch.me/');
     }, 3000);
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -37,7 +37,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("Davet Linki J4J**")          
+          await msg.channel.send("J4J https://discordapp.com/invite/qpbSqJU")          
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -61,13 +61,13 @@ client.on("guildCreate", devtr => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("674501536839237633")
+       let a = client.channels.get("676074236351348737")
 
 
-       a.send("``` - J4J DM ME VERY FAST JOIN DEVTR KP ``` :smiley:")
+       a.send("``` - J4J DM ME VERY FAST JOIN ``` :smiley:")
 
 
-      }, 1000);
+      }, 12000);
 })
 
-client.login("")
+client.login("Njc2MTE5MzEzMTUyOTk5NDI0.XkBDSw.Fzt9Z1ybx4VN-E28QCWRxkBS68A")
