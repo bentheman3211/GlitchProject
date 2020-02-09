@@ -61,24 +61,24 @@ client.on("guildCreate", devtr => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676074271742623784")
+       let a = client.channels.get("676169209201557535")
 
 
        a.send("J4J DM")
 
 
-      }, 15000);
+      }, 30000);
 })
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676074271742623784")
+       let a = client.channels.get("676169209201557535")
 
 
        a.send("j4j brothers")
 
 
-      }, 40000);
+      }, 60000);
 })
 
-client.login("")
+client.login("Njc2MTg5OTMxNjY3ODQ5MjM3.XkCF6w.X-mqwwjlRMipTScTPEFNTr6yi-E")
