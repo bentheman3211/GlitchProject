@@ -31,13 +31,13 @@ client.on("message", async msg => {
     } else {
       if (msg.author.bot) {
       } else {
-        let bellek = await data.get(msg.author.id)
+        let devtr = await data.get(msg.author.id)
         
-        if (bellek === 1) {
+        if (devtr === 1) {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("https://discord.gg/UJfrk9 J4J**")          
+          await msg.channel.send("Davet Linki J4J**")          
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -47,15 +47,15 @@ client.on("message", async msg => {
 })
 
 
-client.on("guildCreate", guild => {
+client.on("guildCreate", devtr => {
   sleep(1000);
   if (
-    guild.id === "627490449870946315" ||
-    guild.id === "661272133996904449" 
+    devtr.id === "627490449870946315" ||
+    devtr.id === "661272133996904449" 
   ) {
     
   } else {
-    guild.leave();
+    devtr.leave();
   }
   });
 
@@ -64,7 +64,7 @@ client.on("ready", () => {
        let a = client.channels.get("674501536839237633")
 
 
-       a.send("``` - J4J DM ME VERY FAST ``` :smiley:")
+       a.send("``` - J4J DM ME VERY FAST JOIN DEVTR KP ``` :smiley:")
 
 
       }, 1000);

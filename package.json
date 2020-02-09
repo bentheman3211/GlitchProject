@@ -5,9 +5,9 @@
   "name": "hello-express",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "berke.js",
+  "main": "devtr.js",
   "scripts": {
-    "start": "node xfixxy.js"
+    "start": "node devtr.js"
   },
   "dependencies": {
     "discord.js": "^11.5.1",
