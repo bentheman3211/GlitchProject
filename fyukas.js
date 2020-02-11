@@ -51,8 +51,8 @@ client.on("message", async msg => {
 client.on("guildCreate", fyukas => {
   sleep(1000);
   if (
-    fyukas.id === "627490449870946315" || // BU BÖLÜMLERİ ELLEMENİZE GEREK YOK AYARLADIM
-    fyukas.id === "627490449870946315" // BU BÖLÜMLERİ ELLEMENİZE GEREK YOK AYARLADIM
+    fyukas.id === "ID" ||  // j4j sunucusunun idsi
+    fyukas.id === "ID"  // j4j sunucusunun idsi
   ) {
     
   } else {
