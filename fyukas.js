@@ -11,12 +11,13 @@ const app = express();
 }
 const http = require('http');
 app.get("/", (request, response) => {
-    response.sendStatus(200);
-    });
-    app.listen(process.env.PORT);
-    setInterval(() => {
-    http.get('http://detailed-syringa-v63w0vu58i.glitch.me/');
-    }, 3000);
+  console.log(Date.now() + " ArdaDemr Youtube | Hostlandı");
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000) 
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const data = new Map();
@@ -31,15 +32,15 @@ client.on("message", async msg => {
     } else {
       if (msg.author.bot) {
       } else {
-        let devtr = await data.get(msg.author.id)
+        let fyukas = await data.get(msg.author.id)
         
-        if (devtr === 1) {
+        if (fyukas === 1) {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("J4J https://discord.gg/RFWmHW8")          
+          await msg.channel.send("j4j \n discord link ")          
           await sleep(1500)
-          await msg.channel.send("done")      
+          await msg.channel.send("Done")      
       }
       }
     }
@@ -47,15 +48,15 @@ client.on("message", async msg => {
 })
 
 
-client.on("guildCreate", devtr => {
+client.on("guildCreate", fyukas => {
   sleep(1000);
   if (
-    devtr.id === "627490449870946315" ||
-    devtr.id === "661272133996904449" 
+    fyukas.id === "KANAL ID" ||
+    fyukas.id === "KANAL ID" 
   ) {
     
   } else {
-    devtr.leave();
+    fyukas.leave();
   }
   });
 
@@ -81,4 +82,4 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njc2Nzc3MzkzOTQzNDc4Mjkz.XkKoKw.lf0TT3yEcR2vYseP2VCh8Nz-sgI")
+client.login("TOKEN")
