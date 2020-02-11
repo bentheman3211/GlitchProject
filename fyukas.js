@@ -82,4 +82,4 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("TOKEN")
+client.login("TOKEN") // user tokeniniz
