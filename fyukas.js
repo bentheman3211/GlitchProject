@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("j4j \n https://discordapp.com/invite/qpbSqJU ")          
+          await msg.channel.send("j4j \n discord sunucunuz ") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
           await sleep(1500)
           await msg.channel.send("Done")      
       }
@@ -51,8 +51,8 @@ client.on("message", async msg => {
 client.on("guildCreate", fyukas => {
   sleep(1000);
   if (
-    fyukas.id === "627490449870946315" ||
-    fyukas.id === "627490449870946315" 
+    fyukas.id === "627490449870946315" || // BU BÖLÜMLERİ ELLEMENİZE GEREK YOK AYARLADIM
+    fyukas.id === "627490449870946315" // BU BÖLÜMLERİ ELLEMENİZE GEREK YOK AYARLADIM
   ) {
     
   } else {
@@ -62,7 +62,7 @@ client.on("guildCreate", fyukas => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676476910401749042")
+       let a = client.channels.get("KANAL ID") // j4j sunucusunun kanal id'si
 
 
        a.send("J4J DM")
@@ -73,7 +73,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676476910401749042")
+       let a = client.channels.get("KANAL ID") // j4j sunucusunun kanal id'si
 
 
        a.send("j4j brothers")
@@ -82,4 +82,4 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njc2NzkwNDMyMTQyOTgzMjA4.XkK5GA.HrTujJEoPESMgP38WjRlFYoxwuE")
+client.login("TOKEN")
