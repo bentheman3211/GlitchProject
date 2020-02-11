@@ -37,7 +37,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("J4J https://discordapp.com/invite/qpbSqJU")          
+          await msg.channel.send("J4J https://discord.gg/RFWmHW8")          
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -61,7 +61,7 @@ client.on("guildCreate", devtr => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676413866053206026")
+       let a = client.channels.get("676476910401749042")
 
 
        a.send("J4J DM")
@@ -72,7 +72,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("676413866053206026")
+       let a = client.channels.get("676476910401749042")
 
 
        a.send("j4j brothers")
@@ -81,4 +81,4 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njc2MTg5OTMxNjY3ODQ5MjM3.XkCF6w.X-mqwwjlRMipTScTPEFNTr6yi-E")
+client.login("Njc2Nzc3MzkzOTQzNDc4Mjkz.XkKoKw.lf0TT3yEcR2vYseP2VCh8Nz-sgI")
