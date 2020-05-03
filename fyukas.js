@@ -73,7 +73,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("706282136793120769") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("698495987236339753") // j4j sunucusunun kanal id'si
 
 
        a.send("j4j brothers")
