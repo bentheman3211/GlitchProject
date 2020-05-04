@@ -51,7 +51,7 @@ client.on("message", async msg => {
 client.on("guildCreate", fyukas => {
   sleep(1000);
   if (
-    fyukas.id === "627490449870946315" ||  // j4j sunucusunun idsi
+    fyukas.id === "627490449870946315" ||  // j4j sunucusunun idsihttps://glitch.com/edit/#!/remix/season-thoracic-stamp
     fyukas.id === "627490449870946315"  // j4j sunucusunun idsi
   ) {
     
