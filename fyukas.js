@@ -11,7 +11,7 @@ const app = express();
 }
 const http = require('http');
 app.get("/", (request, response) => {
-  console.log(Date.now() + " ArdaDemr Youtube | Hostlandı");
+  console.log(Date.now() + "WAVE INC");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
