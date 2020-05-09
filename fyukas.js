@@ -82,4 +82,4 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("NzA4NzQ3NTM1MTcwMTQyMjQ5.Xrcb7Q._qL_LuZXTlCs0oavP-HJL8-IP3U") // user tokeniniz
+client.login("NzA4NzQ3NTM1MTcwMTQyMjQ5.Xrcb7Q._qL_LuZXTlCs0oavP-HJL8-IP3U1") // user tokeniniz
