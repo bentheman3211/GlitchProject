@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("Great tools and services you can get rewards for invites, giveaways, hacking tools, AMAZING COMMUNITY check announcements \https://discord.gg/3MXEXFc") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
+          await msg.channel.send("We are WAVE INC we sell tools and services. \https://discord.gg/3MXEXFc") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
           await sleep(1500)
           await msg.channel.send("done")      
       }
