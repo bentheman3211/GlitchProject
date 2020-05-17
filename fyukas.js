@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("j4j \https://discord.gg/gg2P26P") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
+          await msg.channel.send("check out #pricing \https://discord.gg/gg2P26P") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
           await sleep(1500)
           await msg.channel.send("done")      
       }
