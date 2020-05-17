@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("We are WAVE INC we sell tools and services. \https://discord.gg/3MXEXFc") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
+          await msg.channel.send("j4j \https://discord.gg/gg2P26P") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -82,5 +82,5 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njk5Mjc4NjMwODc3OTIxMjgw.Xr9jlA.nppCKh4WwtAAT5DaDW92hYRNxYc"1111) // user tokeniniz
+client.login("Njk5Mjc4NjMwODc3OTIxMjgw.XsCIyA.Fg8mmuemYt4IrUqu5juZQdRpnCQ") // user tokeniniz
 1
