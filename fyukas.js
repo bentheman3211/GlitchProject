@@ -38,7 +38,7 @@ client.on("message", async msg => {
         } else {
           await data.set(msg.author.id, 1)
           await sleep(1500)
-          await msg.channel.send("We sell tools. check out https://waveshop.xyz/ \https://discord.gg/Vbp2us7") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
+          await msg.channel.send("We sell tools. check out https://waveshop.xyz/ \https://discord.gg/btjXknG") // Discord sunucunuzun kalıcı linkini girin size mesaj atanlara oto dönüş yapması için.      
           await sleep(1500)
           await msg.channel.send("done")      
       }
@@ -62,7 +62,7 @@ client.on("guildCreate", fyukas => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("713010154228154376") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("713795060931756063") // j4j sunucusunun kanal id'si
 
 
        a.send("J4j DM")
@@ -73,7 +73,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("713009798026625024") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("713789571829203055") // j4j sunucusunun kanal id'si
 
 
        a.send("J4J")
@@ -82,5 +82,5 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njk5Mjc4NjMwODc3OTIxMjgw.XsXemA.u9L3w1eTzjo4L-mKy9VHOLTAuSs") // user tokeniniz
+client.login("Njk5Mjc4NjMwODc3OTIxMjgw.XsrOIQ.55cxbBAKftQD1nER26Wh8wpX9EE") // user tokeniniz
 1
