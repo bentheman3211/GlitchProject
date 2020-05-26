@@ -56,7 +56,9 @@ client.on("guildCreate", fyukas => {
   ) {
     
   } else {
+    sleep(1000)
     fyukas.leave();
+    
   }
   });
 
