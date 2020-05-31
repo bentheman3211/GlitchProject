@@ -84,5 +84,5 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njk5Mjc4NjMwODc3OTIxMjgw.XtMTig.OFuRtN0Nvi-PjEfvteYn5ryxiTk") // user tokeniniz
+client.login("1") // user tokeniniz
 1
