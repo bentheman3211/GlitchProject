@@ -64,7 +64,7 @@ client.on("guildCreate", fyukas => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("714681969530896404") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("716208287045124137") // j4j sunucusunun kanal id'si
 
 
        a.send("J4j DM")
@@ -75,7 +75,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("714681995199774720") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("716205866348576880") // j4j sunucusunun kanal id'si
 
 
        a.send("J4J")
@@ -84,5 +84,5 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("Njk5Mjc4NjMwODc3OTIxMjgw.Xs0tjA.rv-KU8_9Qa-V4HcxV1bOy7FkJSg") // user tokeniniz
+client.login("Njk5Mjc4NjMwODc3OTIxMjgw.XtMTig.OFuRtN0Nvi-PjEfvteYn5ryxiTk") // user tokeniniz
 1
