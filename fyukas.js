@@ -51,8 +51,8 @@ client.on("message", async msg => {
 client.on("guildCreate", fyukas => {
   sleep(1000);
   if (
-    fyukas.id === "627490449870946315" ||  // j4j sunucusunun idsihttps://glitch.com/edit/#!/remix/season-thoracic-stamp
-    fyukas.id === "627490449870946315"  // j4j sunucusunun idsi
+    fyukas.id === "848027545936986142" ||  // j4j sunucusunun idsihttps://glitch.com/edit/#!/remix/season-thoracic-stamp
+    fyukas.id === "848027545936986142"  // j4j sunucusunun idsi
   ) {
     
   } else {
@@ -64,7 +64,7 @@ client.on("guildCreate", fyukas => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("716208287045124137") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("848027545936986145") // j4j sunucusunun kanal id'si
 
 
        a.send("J4j DM")
@@ -75,7 +75,7 @@ client.on("ready", () => {
 
 client.on("ready", () => {
       setInterval(() => {
-       let a = client.channels.get("716205866348576880") // j4j sunucusunun kanal id'si
+       let a = client.channels.get("848027545936986145") // j4j sunucusunun kanal id'si
 
 
        a.send("J4J")
@@ -84,5 +84,5 @@ client.on("ready", () => {
       }, 60000);
 })
 
-client.login("1") // user tokeniniz
+client.login("ODQ3OTY4NjEzNDY1OTgwOTQ4.YLGkOQ.JFevqJ_GtvKvWm2grmt99XcFCZk") // user tokeniniz
 1
